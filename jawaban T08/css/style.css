@@ -1,0 +1,36 @@
+table {
+	border: 1px solid teal;
+	border-collapse: collapse;
+}
+td, tr{
+	border: 1px solid teal;
+	padding: 4px;
+}		
+th {
+	padding: 4px;
+	border: 1px solid teal;
+	text-align: center;
+	background: teal;
+	color: white;
+}
+form {
+	width: 25%;
+}
+/*
+---------------------------------
+*/
+a {
+	text-decoration: none;
+	border: 2px solid teal;
+	background: white;
+	color: teal;
+	padding: 6px;
+}
+a:hover {
+	color: white;
+	background: teal;
+}
+a:active {
+	color: white;
+	background: teal;
+}

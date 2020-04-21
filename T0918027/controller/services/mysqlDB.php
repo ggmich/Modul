@@ -59,4 +59,6 @@ class MySQLDB{
 		$this->db_connection->close();
 	}
 }
+
+$db = new MySQLDB("localhost","root","","library");
 ?>
