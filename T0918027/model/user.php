@@ -3,12 +3,10 @@
 class User{
 	protected $userID;
 	protected $name;
-	protected $role;
 
-	public function __construct($userID,$name,$role){
+	public function __construct($userID,$name){
 		$this->userID = $userID;
 		$this->name = $name;
-		$this->role = $role;
 	}
 
 	public function getUserID(){
@@ -19,9 +17,7 @@ class User{
 		return $this->name;
 	}
 
-	public function getRole(){
-		return $this->role;
-	}
+
 }
 
 

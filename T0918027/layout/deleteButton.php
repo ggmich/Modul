@@ -1,1 +1,1 @@
-<button>Delete</button>
+<button value="$row['book_id']">Delete</button>

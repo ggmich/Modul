@@ -4,8 +4,8 @@
     $query2 = "SELECT return_datetime from rent";
     $result = $db->executeSelectQuery($query);
     $result2 = $db->executeSelectQuery($query2);
-    $queryDel = "DELETE FROM book WHERE book_id = 1";
-    $test = $db->executeNonSelectQuery($queryDel);
+    $queryDel = "DELETE FROM book WHERE book_id = 18";
+    $db->executeNonSelectQuery($queryDel);
 ?>
 
 
