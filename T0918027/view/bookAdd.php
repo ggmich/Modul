@@ -1,5 +1,7 @@
 <?php 
 	//library yang diperlukan
+
+//
 ?>
 
 <?php include "../layout/head.php" ?>
