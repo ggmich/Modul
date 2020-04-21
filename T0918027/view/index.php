@@ -3,12 +3,7 @@
     $query = "SELECT * from book";
     $query2 = "SELECT return_datetime from rent";
     $result = $db->executeSelectQuery($query);
-    $result2 = $db->executeSelectQuery($query2);
-    function delete($id){
-        $queryDel = "DELETE FROM book WHERE book_id = $id";
-        $db->executeNonSelectQuery($queryDel);
-    ?>
-    }
+    $result2 = $db->executeSelectQuery($query2);   
 ?>
 
 
