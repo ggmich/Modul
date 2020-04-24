@@ -1,15 +1,16 @@
 .input-group input{
   width: 100%;
   border: none;
-  border-bottom: solid 4px #FF7E62;
+  border-bottom: solid 4px #5357FF;
+  transition: 240ms ease;
   font-size: 12px;
-  line-height: normal;
+  line-height: 15px;
   padding-bottom: 12px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 12px;
-  color: black;
-  background:#575BEA;
+  color: #FFFFFF;
+  background:#9092DF;
 }
 
 input:focus{
@@ -20,7 +21,7 @@ input:focus{
   top:8px !important;
   font-size: 8px !important;
   line-height: 10px !important;
-  color: white;
+  color: #black;
 }
 
 input:active{
@@ -33,7 +34,7 @@ input:active{
 }
 
 .input-group input:focus{
-  border-bottom: solid 4px #575BEA;
+  border-bottom: solid 4px #EE4540;
 }
 
 .input-group label{
