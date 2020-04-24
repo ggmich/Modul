@@ -1,7 +1,7 @@
 .input-group input{
   width: 100%;
   border: none;
-  border-bottom: solid 2px #FF5733;
+  border-bottom: solid 4px #FF7E62;
   font-size: 12px;
   line-height: normal;
   padding-bottom: 12px;
@@ -9,7 +9,7 @@
   padding-right: 8px;
   padding-top: 12px;
   color: black;
-  background:#94321D;
+  background:#575BEA;
 }
 
 input:focus{
@@ -29,11 +29,11 @@ input:active{
 
 .input-group{
   position: relative;
-  width: 300px;
+  width: 260px;
 }
 
 .input-group input:focus{
-  border-bottom: solid 4px #EE4540;
+  border-bottom: solid 4px #575BEA;
 }
 
 .input-group label{
