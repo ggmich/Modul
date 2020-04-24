@@ -20,9 +20,29 @@ input:focus{
   top:8px !important;
   font-size: 8px !important;
   line-height: 10px !important;
-  color: grey;
+  color: white;
 }
 
 input:active{
   outline: none;
+}
+
+.input-group{
+  position: relative;
+  width: 300px;
+}
+
+.input-group input:focus{
+  border-bottom: solid 4px #EE4540;
+}
+
+.input-group label{
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  line-height: 15px;
+  pointer-events: none;
+  transition: 180ms ease;
 }
