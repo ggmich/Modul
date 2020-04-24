@@ -1,0 +1,28 @@
+.input-group input{
+  width: 100%;
+  border: none;
+  border-bottom: solid 2px #FF5733;
+  font-size: 12px;
+  line-height: normal;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 12px;
+  color: black;
+  background:#94321D;
+}
+
+input:focus{
+  outline: none;
+}
+
+.label-active{
+  top:8px !important;
+  font-size: 8px !important;
+  line-height: 10px !important;
+  color: grey;
+}
+
+input:active{
+  outline: none;
+}

@@ -1,1 +1,0 @@
-<button onclick="window.location.href = 'borrowBook.php';">Rent</button>

@@ -1,5 +1,0 @@
-<?php 
-	
-
-?>
-<button>Delete</button>
