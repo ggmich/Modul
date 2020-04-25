@@ -14,21 +14,23 @@
 
   <body>
 
-    <form method="post" action="/test.php">
+    <form method="post" action="../Controller/login.php">
       <div class="divLogin">
         <div class="input-group">
-          <label id="label-1">Email</label>
+
+          <label id="label-1">Username</label>
           <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
-          id="input-1" type="email" name="email" required>
+          id="input-1" type="text" name="username" required>
+
         </div>
 
         <br>
 
         <div class="input-group">
+
           <label id="label-2">Password</label>
           <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
            type="password" name="password" required></input>
-
 
         </div>
 
