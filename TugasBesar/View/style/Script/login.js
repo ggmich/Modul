@@ -1,4 +1,3 @@
-<script>
   function checkLabel(labelID,input){
     let label = document.getElementById(labelID);
     input = input;
@@ -10,4 +9,3 @@
       }
     }
   }
-</script>
