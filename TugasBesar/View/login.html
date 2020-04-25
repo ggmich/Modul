@@ -6,6 +6,7 @@
     <title>Together We Can Login</title>
 
     <link rel="stylesheet" href="../View/style/loginStyle.css">
+    <link rel="stylesheet" href="../View/style/defaultButton.css">
 
 
 
@@ -13,13 +14,36 @@
 
   <body>
 
-    <div class="input-group">
-      <label id="label-1">Username</label>
-      <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
-      id="input-1" type="text" name="name" required>
-    </div>
-    <br>
-    <input type="submit" value="Login">
+    <form method="post" action="/test.php">
+      <div class="divLogin">
+        <div class="input-group">
+          <label id="label-1">Email</label>
+          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+          id="input-1" type="email" name="email" required>
+        </div>
+
+        <br>
+
+        <div class="input-group">
+          <label id="label-2">Password</label>
+          <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+           type="password" name="password" required></input>
+
+
+        </div>
+
+        <br>
+
+        <div>
+          <input class="button" type="submit" value="Login">
+        </div>
+
+      </div>
+      <br>
+    </form>
+    <a style="text-decoration:none;color:black;" href="../View/forgotPassword.html"><b>Lupa Password ?</b></a>
+
+
 
     <script src="../View/style/Script/login.js"></script>
   </body>

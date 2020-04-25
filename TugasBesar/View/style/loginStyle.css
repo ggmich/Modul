@@ -1,16 +1,21 @@
+.divLogin{
+  margin: auto;
+  overflow: auto;
+}
+
 .input-group input{
   width: 100%;
   border: none;
-  border-bottom: solid 4px #5357FF;
-  transition: 240ms ease;
+  border-bottom: solid 4px #2471A3;
   font-size: 12px;
-  line-height: 15px;
+  line-height: normal;
   padding-bottom: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
+  transition: 500ms ease;
+  padding-left: 8px;
+  padding-right: 8px;
   padding-top: 12px;
-  color: #FFFFFF;
-  background:#9092DF;
+  color: black;
+  background:#D4E6F1;
 }
 
 input:focus{
@@ -21,7 +26,7 @@ input:focus{
   top:8px !important;
   font-size: 8px !important;
   line-height: 10px !important;
-  color: #black;
+  color: #2471A3;
 }
 
 input:active{
@@ -34,7 +39,7 @@ input:active{
 }
 
 .input-group input:focus{
-  border-bottom: solid 4px #EE4540;
+  border-bottom: solid 4px #E74C3C;
 }
 
 .input-group label{
