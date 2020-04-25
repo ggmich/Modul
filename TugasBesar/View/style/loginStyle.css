@@ -41,10 +41,11 @@ input:active{
 .input-group{
   position: relative;
   width: 260px;
+  margin-left: 50px;
 }
 
 .input-group input:focus{
-  border-bottom: solid 4px #E74C3C;
+  border-bottom: solid 4px blue;
 }
 
 .input-group label{
