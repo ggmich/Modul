@@ -1,6 +1,11 @@
 .divLogin{
   margin: auto;
   overflow: auto;
+  margin-left: 550px;
+  margin-top: 120px;
+}
+a{
+  margin-left: 550px;
 }
 
 .input-group input{
