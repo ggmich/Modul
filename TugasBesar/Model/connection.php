@@ -1,4 +1,7 @@
 <?php
+/*
+    Essential connection module for Controller Folder
+*/
 
 // query for connect to phpMyAdmin default Credentials
 $connection = mysqli_connect('localhost','root','');

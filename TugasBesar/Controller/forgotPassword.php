@@ -1,9 +1,10 @@
 <?php
 /*
-    Login verification method
+    Forget Password  method
 */
 require ('../Model/connection.php');
 
+/*
 // check html textBox empty or not
 if(isset($_POST['username']) and isset($_POST['password'])){
 
@@ -29,4 +30,5 @@ if(isset($_POST['username']) and isset($_POST['password'])){
 
   }
 }
+*/
 ?>

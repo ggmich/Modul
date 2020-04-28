@@ -1,10 +1,11 @@
 <?php
 /*
-    Login verification method
+    Registration method
 */
 require ('../Model/connection.php');
 
 // check html textBox empty or not
+/*
 if(isset($_POST['username']) and isset($_POST['password'])){
 
   // initialize username & password from login form.html
@@ -29,4 +30,5 @@ if(isset($_POST['username']) and isset($_POST['password'])){
 
   }
 }
+*/
 ?>
