@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="../View/style/loginStyle.css">
+    <link rel="stylesheet" href="../View/style/defaultButton.css">
+
+  </head>
+
+  <body style="background-image : url('style/fund.png')">
+
+    <form method="post" action="../Controller/registration.php">
+      <div class="divLogin">
+
+        <h1 style="padding-left: 90px;">Registration</h1>
+
+        <div class="input-group">
+
+          <label id="label-1">Name</label>
+          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+          id="input-1" type="text" name="Name" required>
+
+        </div>
+
+        <br>
+
+        <div class="input-group">
+
+          <label id="label-1">Email</label>
+          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+          id="input-1" type="text" name="Email" required>
+
+        </div>
+
+        <br>
+
+        <div class="input-group">
+
+          <label id="label-2">Password</label>
+          <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+           type="password" name="password" required></input>
+
+        </div>
+
+        <br>
+
+        <div>
+          <input class="button" type="submit" value="Sign Up">
+        </div>
+
+      </div>
+      <br>
+    </form>
+
+
+
+    <script src="../View/style/Script/login.js"></script>
+    
+  </body>
+</html>
