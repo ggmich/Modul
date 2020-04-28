@@ -1,0 +1,36 @@
+body{
+    margin : 0px;
+    
+   }
+   #main{
+    border-style: soli gray;
+    height : 50px ;
+    background-color: gray;
+    margin : 0px;
+ 
+   }
+   a.listlink {
+    display: inline-block;
+    text-align: center;
+    color : white ;
+    height : 35px;
+    padding-top : 15px;
+    padding-left : 15px;
+    padding-right : 15px;
+    
+   }
+   a.listlink:hover {
+    background-color: black;
+    color :white ;
+    text-decoration: none;
+   }
+   a.listlink:visited{
+    text-decoration: none;
+   }
+   a.listlink:link{
+    text-decoration: none;
+   }
+   a.listlink:active{
+    text-decoration: none;
+   }
+ 
