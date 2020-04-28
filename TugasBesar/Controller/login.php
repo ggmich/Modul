@@ -1,5 +1,5 @@
 <?php
-require ('connection.php');
+require ('../Model/connection.php');
 
 // check html textBox empty or not
 if(isset($_POST['username']) and isset($_POST['password'])){
@@ -23,7 +23,7 @@ if(isset($_POST['username']) and isset($_POST['password'])){
   }else{
     // Login Credentials verified
     echo "<script type='text/javascript'>alert('Invalid Login Credentials')</script>";
-    
+
   }
 }
 ?>

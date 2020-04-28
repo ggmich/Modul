@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require "process/mysqlDB.php";
 	$query = "SELECT * from user_data";
 
@@ -14,6 +14,7 @@
 
 	$result = $db->executeSelectQuery($query);
 ?>
+
 <?php include "layout/head.php" ?>
 	<form method="GET" action="users.php">
 		<fieldset>
@@ -42,5 +43,5 @@
 			}
 		?>
 	</table>
-	
+
 <?php include "layout/foot.php" ?>
