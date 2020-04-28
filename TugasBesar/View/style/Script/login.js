@@ -1,3 +1,5 @@
+
+  // label textBox animation function
   function checkLabel(labelID,input){
     let label = document.getElementById(labelID);
     input = input;
