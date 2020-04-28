@@ -9,7 +9,7 @@ if(isset($_POST['username']) and isset($_POST['password'])){
   $password = $_POST['password'];
 
   // check credential in database
-  $checkQuery = "select * from admin where username='$username' and password='$password'";
+  $checkQuery = "select * from User where username='$username' and password='$password'";
   $result = mysqli_query($connection, $checkQuery) or die(mysqli_error($connection));
   $count = mysqli_num_rows($result);
 
