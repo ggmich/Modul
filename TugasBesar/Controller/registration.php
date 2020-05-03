@@ -2,12 +2,7 @@
 /*
     Registration method
 */
-require ('../Model/connection.php');
-
-// re create from connection php, BUG
-$connection = mysqli_connect('localhost','root','');
-$select_db = mysqli_select_db($connection, 'togetherWeCan');
-
+include ('../Model/connection.php');
 
 // check html textBox empty or not
 if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['password'])){

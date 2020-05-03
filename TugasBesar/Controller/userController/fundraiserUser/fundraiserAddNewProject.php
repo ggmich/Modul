@@ -1,14 +1,9 @@
 <?php 
 
 /*
-    Registration method
+    fundraiser add new project method
 */
-require ('../Model/connection.php');
-/*
-// re create from connection php, BUG
-$connection = mysqli_connect('localhost','root','');
-$select_db = mysqli_select_db($connection, 'togetherWeCan');
-
+include ('../Model/connection.php');
 
 // check html textBox empty or not
 if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['password'])){
@@ -19,8 +14,7 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   $password = $_POST['password'];
 
   // credential registration in database
-  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '', '$email', '$password', '')
-";
+  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '', '$email', '$password', '')";
 
 
   // $connection variable from connection.php
@@ -33,5 +27,5 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   // Close connection
   mysqli_close($connection);
 }
-*/
+
 ?>
