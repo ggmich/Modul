@@ -1,0 +1,22 @@
+/*
+
+  Styling for login textBox animation & sizing
+  Use for: textBox
+
+*/
+.main:after{
+  content: "";
+  display : table;
+  clear: both;
+}
+
+.gambar{
+  float: left;
+  width: 30%;
+  height : 100%;
+}
+
+.input{
+  float: left;
+  width: 40%;
+}
