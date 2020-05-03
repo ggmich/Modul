@@ -9,3 +9,4 @@
 		</tr>
 	</table>
 	
+<?php include "../View/style/footer.html" ?>
