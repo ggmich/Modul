@@ -10,10 +10,18 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
 
   // initialize username & password from login form.html
   $username = $_POST['username'];
-  $email = $_POST['email'];
-  $password = $_POST['password'];
+  $name = $_POST['nama'];
+  $date = $_POST['date'];
+  $type = $_POST['type'];
+  $story = $_POST['story'];
+  $ktp = $_POST['ktp'];
+  $phone = $_POST['phone'];
+  $address = $_POST['address'];
+  $fundTarget = $_POST['fundTarget'];
 
   // credential registration in database
+
+  /*
   $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '', '$email', '$password', '')";
 
 
@@ -23,6 +31,8 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   } else{
     echo "ERROR: Could not able to execute $registerQuery. " . mysqli_error($connection);
   }
+
+	*/
 
   // Close connection
   mysqli_close($connection);
