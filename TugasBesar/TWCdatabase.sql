@@ -4,8 +4,12 @@ CREATE TABLE IF NOT EXISTS campaign (
   idFundraiser int(10) NOT NULL,
   tglMulai date NOT NULL,
   tglSelesai date NOT NULL,
-  target int(20) NOT NULL,
-  keterangan varchar(250) NOT NULL
+  fundTarget int(20) NOT NULL,
+  story varchar(250) NOT NULL,
+  type varchar(50) NOT NULL,
+  ktp int(30) NOT NULL,
+  phone int(15) NOT NULL,
+  address varchar(150) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 ALTER TABLE campaign
