@@ -16,21 +16,21 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '', '$email', '$password', '')";
 
   // check credential in database
-  $checkQuery = "select * from User where username='$username' and password='$password'";
+  $checkQuery = "select * from User where username='$username'";
   $result = mysqli_query($connection, $checkQuery) or die(mysqli_error($connection));
   $count = mysqli_num_rows($result);
 
   if($count >= 1){
     // Login Credentials verified
     echo "<script type='text/javascript'>alert('Invalid Login Credentials')</script>";
-    header("Location: ../View/index.php");
+    header("Location: ../View/registration.html");
 
   }else{
 
     // $connection variable from connection.php
     if(mysqli_query($connection, $registerQuery)){
       echo "Records inserted successfully.";
-      header("Location: ../View/home.html");
+      header("Location: ../View/index.php");
     } else{
       echo "ERROR: Could not able to execute $registerQuery. " . mysqli_error($connection);
     }
