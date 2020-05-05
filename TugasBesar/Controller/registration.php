@@ -13,8 +13,7 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   $password = $_POST['password'];
 
   // credential registration in database
-  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '', '$email', '$password', '')
-";
+  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '', '$email', '$password', '')";
 
   // check credential in database
   $checkQuery = "select * from User where username='$username' and password='$password'";
@@ -25,7 +24,6 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
     // Login Credentials verified
     echo "<script type='text/javascript'>alert('Invalid Login Credentials')</script>";
     header("Location: ../View/index.php");
-    exit();
 
   }else{
 
