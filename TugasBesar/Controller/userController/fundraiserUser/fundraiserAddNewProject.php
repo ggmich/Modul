@@ -34,11 +34,12 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   // $connection variable from connection.php
   if(mysqli_query($connection, $registerQuery)){
     echo "Records inserted successfully.";
+    header("Location: ../View/home.html");
   } else{
     echo "ERROR: Could not able to execute $registerQuery. " . mysqli_error($connection);
   }
 
-	
+
 
   // Close connection
   mysqli_close($connection);
