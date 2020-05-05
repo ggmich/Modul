@@ -16,7 +16,6 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '', '$email', '$password', '')
 ";
 
-
   // $connection variable from connection.php
   if(mysqli_query($connection, $registerQuery)){
     echo "Records inserted successfully.";

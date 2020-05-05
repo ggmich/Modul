@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
     fundraiser add new project method
@@ -8,8 +8,7 @@ include ('../Model/connection.php');
 // check html textBox empty or not
 if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['password'])){
 
-  // initialize username & password from login form.html
-  $username = $_POST['username'];
+  // registering data to Campaign atribute database
   $name = $_POST['nama'];
   $date = $_POST['date'];
   $type = $_POST['type'];
@@ -19,10 +18,17 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   $address = $_POST['address'];
   $fundTarget = $_POST['fundTarget'];
 
-  // credential registration in database
-
   /*
-  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '', '$email', '$password', '')";
+
+  $idFundraiser = ? (Masukin ke tabel campaign )
+
+  extractnya lewat session ID usernya dari cookie
+
+  */
+
+  // query for database
+  $registerQuery = "INSERT INTO `campaign` (`idCampaign`, `namaCampaign`, `idFundraiser`, `tglMulai`, `tglSelesai`, `fundTarget`, `story`, `type`, `ktp`, `phone`, `address`)
+  VALUES ('', '$name', '', '$date', '', '$fundTarget', '$story', '$type', '$ktp', '$phone', '$address')";
 
 
   // $connection variable from connection.php
@@ -32,7 +38,7 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
     echo "ERROR: Could not able to execute $registerQuery. " . mysqli_error($connection);
   }
 
-	*/
+	
 
   // Close connection
   mysqli_close($connection);
