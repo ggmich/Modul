@@ -9,11 +9,13 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
 
   // initialize username & password from login form.html
   $username = $_POST['username'];
+  $namaLengkap = $_POST['namaLengkap'];
   $email = $_POST['email'];
   $password = $_POST['password'];
+  $noHp = $_POST['noHp'];
 
   // credential registration in database
-  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '', '$email', '$password', '')";
+  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '$namaLengkap', '$email', '$password', '$noHp')";
 
   // check credential in database
   $checkQuery = "select * from User where username='$username'";
