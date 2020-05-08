@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
 
-    <title>Fundraiser - new project</title>
+<head>
+  <meta charset="utf-8">
 
-    <link rel="stylesheet" href="../View/style/fundraiserNewProject.css">
-    <link rel="stylesheet" href="../View/style/defaultButton.css">
+  <title>Fundraiser - new project</title>
+
+  <link rel="stylesheet" href="../View/style/fundraiserNewProject.css">
+  <link rel="stylesheet" href="../View/style/defaultButton.css">
 
 
 
-  </head>
+</head>
 
-  <body style="background-image : url('style/fund.png')">
+<body style="background-image : url('style/fund.png')">
 
-    <form method="post" action="../Controller/userController/fundraiserUser/fundraiserAddNewProject.php">
-      <div class="main">
-        <div class="gambar">
+  <form method="post" action="../Controller/userController/fundraiserUser/fundraiserAddNewProject.php">
+    <div class="main">
+      <div class="gambar">
 
-          <label for="gambarCampaign">Tambahkan gambar untuk lebih meyakinkan para donatur</label>
-          <br>
-          <input type="file" id="gambarCampaign" name="gambarCampaign" accept="image/*">
-
-        </div>
-
-        <div class="input">
-
-          <fieldset>
-            <legend>Campaign Information</legend>
-              <table id="campaignDetails"></table>
-                <tr>
-                  <td><label>Nama campaign : </label></td><br>
-                  <td><label>Tanggal mulai campaign : </label></td><br>
-                  <td><label>Jenis campaign : </label></td><br>
-                  <td><label>Keterangan : </label></td>
-                </tr>
-
-                <tr>
-                  <td><input type="text" id="nama"></td><br>
-                  <td><input type="date" id="tanggal" value="dd/mm/yyyy"></td><br>
-                  <td><select id="tipe"><br>
-                    <option value="bencana alam">bencana alam</option>
-                    <option value="orang sakit">orang sakit</option>
-                    <option value="lainnya">lainnya</option>
-                  </select></td>
-                  <td><input type="text" id="keterangan"></td>
-                </tr>
-  
-          </fieldset>
-
-        </div>
-
-        <div>
-          <input class="button" type="submit" value="save">
-        </div>
+        <label for="gambarCampaign">Tambahkan gambar untuk lebih meyakinkan para donatur</label>
+        <br>
+        <input type="file" id="gambarCampaign" name="gambarCampaign" accept="image/*">
 
       </div>
-    </form>
-  </body>
+
+      <div class="input">
+
+        <fieldset>
+          <legend>Campaign Information</legend>
+          <table id="campaignDetails"></table>
+          <tr>
+            <td><label>Nama campaign : </label></td>
+            <td><input type="text" id="nama"></td>
+          </tr>
+          <tr>
+            <td><label>Tanggal mulai campaign : </label></td>
+            <td><input type="date" id="tanggal" value="dd/mm/yyyy"></td>
+          </tr>
+          <tr>
+            <td><label>Jenis campaign : </label></td>
+            <td><select id="tipe"><br>
+                <option value="bencana alam">bencana alam</option>
+                <option value="orang sakit">orang sakit</option>
+                <option value="lainnya">lainnya</option>
+              </select></td>
+          </tr>
+          <td><label>Keterangan : </label></td>
+          <td><input type="text" id="keterangan"></td>
+          </tr>
+
+        </fieldset>
+
+      </div>
+
+      <div>
+        <input class="button" type="submit" value="save">
+      </div>
+
+    </div>
+  </form>
+</body>
+
 </html>
