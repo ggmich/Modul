@@ -44,4 +44,5 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   mysqli_close($connection);
 }
 
+
 ?>
