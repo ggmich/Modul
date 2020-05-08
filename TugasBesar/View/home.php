@@ -1,16 +1,26 @@
 <?php
-	// include header disini
+	include "../View/headerUser.html";
 ?>
 
-<?php 
+	<hr>
 
-	//	Content / home.html
+	<table>
+		<?php
+    /*
+			foreach ($result as $key => $row) {
+				echo "<tr>";
+				echo "<td>".$row['userID']."</td>";
+				echo "<td>".$row['name']."</td>";
+				echo "<td>".$row['role']."</td>";
+				echo "</tr>";
+			}
+      */
+		?>
+	</table>
 
-?>
 
+<?php
 
-<?php 
-
-	//	 include footer
+	include "../View/footer.html";
 
 ?>
