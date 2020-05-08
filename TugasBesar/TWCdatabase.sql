@@ -9,7 +9,10 @@ CREATE TABLE IF NOT EXISTS campaign (
   type varchar(50) NOT NULL,
   ktp int(30) NOT NULL,
   phone int(15) NOT NULL,
+  image BLOB,
+  campaignLink varchar(1000),
   address varchar(150) NOT NULL
+
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 ALTER TABLE campaign
