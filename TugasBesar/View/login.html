@@ -1,78 +1,62 @@
-/*
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
 
-  Styling for login textBox animation & sizing
-  Use for: textBox
+    <title>Together We Can Login</title>
 
-*/
-.main{
-  width: 670px;
-  height : 358px;
-  background-color: black;
-  margin-top : 30px;
-  margin-left: auto;
-  margin-right : auto;
-  position : relative;
-  text-align: center;
-  border-radius: 10px;
-}
-.divLogin{
-  margin: auto;
-  overflow: auto;
-  margin-left: 550px;
-  margin-top: 120px;
-}
+    <link rel="stylesheet" href="../View/style/loginStyle.css">
+    <link rel="stylesheet" href="../View/style/defaultButton.css">
 
-a{
-  margin-left: 550px;
-}
 
-.input-group input{
-  width: 100%;
-  border: none;
-  border-bottom: solid 4px #2471A3;
-  font-size: 12px;
-  line-height: normal;
-  padding-bottom: 12px;
-  transition: 500ms ease;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 12px;
-  color: black;
-  background:#D4E6F1;
-}
 
-input:focus{
-  outline: none;
-}
+  </head>
 
-.label-active{
-  top:8px !important;
-  font-size: 8px !important;
-  line-height: 10px !important;
-  color: #2471A3;
-}
+  <body>
 
-input:active{
-  outline: none;
-}
+    <div class="main">
 
-.input-group{
-  position: relative;
-  width: 260px;
-  margin-left: 50px;
-}
+    <form method="post" action="../Controller/login.php">
+      <div class="divLogin">
+        <div class="input-group">
 
-.input-group input:focus{
-  border-bottom: solid 4px blue;
-}
+          <label id="label-1">Username</label>
+          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+          id="input-1" type="text" name="username" required>
 
-.input-group label{
-  position: absolute;
-  top: 50%;
-  left: 8px;
-  transform: translateY(-50%);
-  font-size: 12px;
-  line-height: 15px;
-  pointer-events: none;
-  transition: 180ms ease;
-}
+        </div>
+
+        <br>
+
+        <div class="input-group">
+
+          <label id="label-2">Password</label>
+          <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+           type="password" name="password" required></input>
+
+        </div>
+
+        <br>
+
+        <div>
+          <input class="button" type="submit" value="Login">
+        </div>
+
+      </div>
+      <br>
+    </form>
+
+    </div>
+
+    <a style="text-decoration:none;color:black;padding-left: 130px;" href="../View/forgotPassword.html"><b>Forgot Password?</b></a>
+
+    <br>
+
+    <a style="text-decoration:none;color:black;padding-left: 160px;" href="../View/registration.html"><b>Sign Up</b></a>
+
+
+
+    <script src="../View/style/Script/login.js"></script>
+    
+  </body>
+</html>
