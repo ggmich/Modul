@@ -6,7 +6,6 @@
     <title>TogetherWeCan - Login</title>
 
     <link rel="stylesheet" href="../View/style/loginStyle.css">
-    <link rel="stylesheet" href="../View/style/defaultButton.css">
 
 
 
@@ -20,13 +19,17 @@
 
       <hr>
 
+      <h1 style="margin-left: 10px;">Login</h1>
+
+      <br>
+
       <div class="divLogin">
 
         <form method="post" action="../Controller/login.php"></form>
 
           <div class="input-group">
 
-            <label id="label-1">Username</label>
+            <label id="label-1" style="font-size: 20px;">Username</label>
             <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
             id="input-1" type="text" name="username" required>
 
@@ -36,7 +39,7 @@
 
           <div class="input-group">
 
-            <label id="label-2">Password</label>
+            <label id="label-2" style="font-size: 20px;">Password</label>
             <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
             type="password" name="password" required></input>
 
@@ -50,15 +53,13 @@
 
         </form>
 
-        <br>
-
       </div>
 
-      <a id="fpsu" href="../View/forgotPassword.html"><b>Forgot Password?</b></a>
+      <a id="fp" style="margin-left: 10px;font-size: 20px;" href="../View/forgotPassword.html"><b>Forgot Password?</b></a>
 
-      <br>
+      <br><hr><br>
 
-      <a id="fpsu" href="../View/registration.html"><b>Sign Up</b></a>
+      <a style="font-size: 20px;"><b>Don't have an account? &nbsp;</b><a id="su" style="font-size: 20px;" href="../View/registration.html"><b>Sign Up</b></a></a>
 
     </div>
 
