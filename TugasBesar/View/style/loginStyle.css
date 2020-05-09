@@ -5,7 +5,11 @@
 
 */
 body{
+  background-image: url("donate.png");
   font-family: AmaticSC-Regular;
+  background-size: cover;
+  align-items: center;
+  display: flex;
 }
 
 hr{
@@ -30,17 +34,15 @@ p{
   text-align: center;
   border-radius: 5px;
   border : 0.5px solid rgb(211, 211, 211);
+  background-color: rgba(255, 255, 255, 0.808);
 }
 
-.divLogin{
-  margin: auto;
-  overflow: auto;
-  margin-left: 550px;
-  margin-top: 120px;
-}
-
-#fpsu{
+#fp{
   text-decoration: none;
+  color: black;
+}
+
+#su{
   color: black;
 }
 
@@ -76,8 +78,13 @@ input:active{
 
 .input-group{
   position: relative;
-  width: 260px;
-  margin-left: 50px;
+  width: 250px;
+  margin : auto;
+}
+
+
+.divLogin{
+  height : 180px;
 }
 
 .input-group input:focus{
@@ -95,7 +102,22 @@ input:active{
   transition: 180ms ease;
 }
 
+.button{
+  background-color: rgb(172, 213, 240);
+  border: none;
+  border-radius: 10px;
+  width : 80px;
+  height : 40px;
+  position: relative;
+  margin : auto;
+  margin-left : 10px;
+  font-family : AmaticSC-Regular;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 @font-face{
   font-family : AmaticSC-Regular;
   src : url(fonts/AmaticSC-Regular.ttf);
 }
+
