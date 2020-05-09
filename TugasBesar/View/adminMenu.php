@@ -1,7 +1,4 @@
-<?php
-include_once "../View/headerUser.html";
-?>
-<!DOCTYPE html>
+<?php include_once "../View/headerUser.html"; ?>
 
 <head>
     <meta charset="utf-8">
@@ -13,21 +10,14 @@ include_once "../View/headerUser.html";
 </head>
 
 <body>
-    <div class="main">
-        <div class="content">
-            <a href=""> <img src="../images/show.jpg"></a>
-
-        </div>
-
-        <div class="content">
-            <a href=""> <img src="../images/delete.jpg"></a>
-        </div>
-
-        <div class="content">
-            <a href=""> <img src="../images/verify.jpg"></a>
-        </div>
+    <nav class="admin">
+        <ul style="list-style: none;">
+            <li><a href="">Verifikasi Fundraiser</a></li>
+            <li><a href="">Verifikasi Campaign</a></li>
+            <li><a href="">Verifikasi Donasi</a></li>
+            <li><a href="">Verifikasi Penarikan Dana</a></li>
+        </ul>
+    </div>
     </div>
 </body>
-
-</html>
-<?php include_once "../View/footer.html";?>
+<?php include_once "../View/footer.html"; ?>

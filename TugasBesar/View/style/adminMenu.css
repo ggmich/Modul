@@ -9,3 +9,7 @@ img {
     width: 200px;
     height: 200px;
   }
+ nav.admin ul li a{
+    background: aqua;
+    margin: 5px;
+  }

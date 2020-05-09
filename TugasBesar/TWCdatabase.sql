@@ -54,9 +54,16 @@ CREATE TABLE IF NOT EXISTS Donasi (
   statAnonim varchar(20) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
 
+
 ALTER TABLE User
   ADD PRIMARY KEY (userName);
 
+  CREATE  UNIQUE INDEX Cmpgn ON campaign(idCampaign) USING BTREE;
+ CREATE  UNIQUE INDEX fnraiser ON fundraiser(idFundraiser) USING BTREE;
+  CREATE  UNIQUE INDEX dntr ON donatur(idDonatur) USING BTREE;
+   CREATE  UNIQUE INDEX usr ON User(idUser) USING BTREE;
+    CREATE  UNIQUE INDEX dnsi ON donasi(idDonasi) USING BTREE;
+	CREATE  UNIQUE INDEX statAn ON donasi(statAnonim) USING BITMAP;
 ----------------------------------------------
 
 ALTER TABLE book
