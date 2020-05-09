@@ -43,6 +43,16 @@ CREATE TABLE IF NOT EXISTS User (
   noHp varchar(20) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
 
+CREATE TABLE IF NOT EXISTS Donasi (
+  idTransaksi int(10) NOT NULL,
+  idCampaign int(10) NOT NULL,
+  idDonatur int(10) NOT NULL,
+  totalDonasi money NOT NULL,
+  jumlahPencairanDana money NOT NULL,
+  tanggalDonasi date NOT NULL,
+  statAnonim varchar(20) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
+
 ALTER TABLE User
   ADD PRIMARY KEY (userName);
 
