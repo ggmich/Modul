@@ -7,18 +7,35 @@
   <br>
 
 	<table>
-		<?php
+		<?php 
 
-			foreach ($result as $key => $row) {
-				echo "<tr>";
-				echo "<td>".$row['userID']."</td>";
-				echo "<td>".$row['name']."</td>";
-				echo "<td>".$row['role']."</td>";
-				echo "</tr>";
+			$imageSelectQuery = " SELECT image, campaignLink, namaCampaign from campaign";
+			$result = $connection-> query($imageSelectQuery);
+
+			if($result-> num_rows > 0){
+				while($row = $result-> fetch_assoc()){
+					echo "<tr><td>";
+		?>
+
+		<?php
+					echo '<img src="data:image:base64,'.base64_encode($row['image']).'">';
+		?>
+
+		<?php			
+					echo "</td><td>";
+					echo "<a href='".$row["campaignLink"]."'>";
+					echo $row["namaCampaign"]."</a>";
+					echo "</td></tr>";
+				}
 			}
-      
+			else{
+				echo "gagal fetching";
+			}
+
+			$connection-> close();
 		?>
 	</table>
+
 
 
 <?php
