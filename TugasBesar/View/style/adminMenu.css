@@ -9,7 +9,13 @@ img {
     width: 200px;
     height: 200px;
   }
- nav.admin ul li a{
+ div.admin ul li a{
     background: aqua;
     margin: 5px;
+  }
+  div.admin{
+    background-color: lightblue;
+    width: 200px;
+    padding: 25px;
+    border: 25px solid navy;
   }

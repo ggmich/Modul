@@ -10,14 +10,13 @@
 </head>
 
 <body>
-    <nav class="admin">
+    <div class="admin">
         <ul style="list-style: none;">
             <li><a href="">Verifikasi Fundraiser</a></li>
             <li><a href="">Verifikasi Campaign</a></li>
             <li><a href="">Verifikasi Donasi</a></li>
             <li><a href="">Verifikasi Penarikan Dana</a></li>
         </ul>
-    </div>
     </div>
 </body>
 <?php include_once "../View/footer.html"; ?>
