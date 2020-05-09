@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS campaign (
   type varchar(50) NOT NULL,
   ktp int(30) NOT NULL,
   phone int(15) NOT NULL,
-  image BLOB,
+  image LONGBLOB NOT NULL,
   campaignLink varchar(1000),
   address varchar(150) NOT NULL
 
