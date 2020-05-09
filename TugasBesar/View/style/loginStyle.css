@@ -4,17 +4,34 @@
   Use for: textBox
 
 */
+body{
+  font-family: AmaticSC-Regular;
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+p{
+  font-size: 70px;
+  margin : 0px;
+}
+
 .main{
-  width: 670px;
-  height : 358px;
-  background-color: black;
-  margin-top : 30px;
+  width: 500px;
+  height : 500px;
+  background-color: white;
   margin-left: auto;
   margin-right : auto;
+  margin-top : 50px;
   position : relative;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
+  border : 0.5px solid rgb(211, 211, 211);
 }
+
 .divLogin{
   margin: auto;
   overflow: auto;
@@ -22,8 +39,9 @@
   margin-top: 120px;
 }
 
-a{
-  margin-left: 550px;
+#fpsu{
+  text-decoration: none;
+  color: black;
 }
 
 .input-group input{
@@ -75,4 +93,9 @@ input:active{
   line-height: 15px;
   pointer-events: none;
   transition: 180ms ease;
+}
+
+@font-face{
+  font-family : AmaticSC-Regular;
+  src : url(fonts/AmaticSC-Regular.ttf);
 }
