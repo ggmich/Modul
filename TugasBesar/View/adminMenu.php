@@ -30,8 +30,4 @@ include_once "../View/headerUser.html";
 </body>
 
 </html>
-<?php
-
-include_once "../View/footer.html";
-
-?>
+<?php include_once "../View/footer.html";?>
