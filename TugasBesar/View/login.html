@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Together We Can Login</title>
+    <title>TogetherWeCan - Login</title>
 
     <link rel="stylesheet" href="../View/style/loginStyle.css">
     <link rel="stylesheet" href="../View/style/defaultButton.css">
@@ -16,45 +16,51 @@
 
     <div class="main">
 
-    <form method="post" action="../Controller/login.php">
+      <p>TogetherWeCan !</p>
+
+      <hr>
+
       <div class="divLogin">
-        <div class="input-group">
 
-          <label id="label-1">Username</label>
-          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
-          id="input-1" type="text" name="username" required>
+        <form method="post" action="../Controller/login.php"></form>
 
-        </div>
+          <div class="input-group">
+
+            <label id="label-1">Username</label>
+            <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+            id="input-1" type="text" name="username" required>
+
+          </div>
+
+          <br>
+
+          <div class="input-group">
+
+            <label id="label-2">Password</label>
+            <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+            type="password" name="password" required></input>
+
+          </div>
+
+          <br>
+
+          <div>
+            <input class="button" type="submit" value="Login">
+          </div>
+
+        </form>
 
         <br>
-
-        <div class="input-group">
-
-          <label id="label-2">Password</label>
-          <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
-           type="password" name="password" required></input>
-
-        </div>
-
-        <br>
-
-        <div>
-          <input class="button" type="submit" value="Login">
-        </div>
 
       </div>
+
+      <a id="fpsu" href="../View/forgotPassword.html"><b>Forgot Password?</b></a>
+
       <br>
-    </form>
+
+      <a id="fpsu" href="../View/registration.html"><b>Sign Up</b></a>
 
     </div>
-
-    <a style="text-decoration:none;color:black;padding-left: 130px;" href="../View/forgotPassword.html"><b>Forgot Password?</b></a>
-
-    <br>
-
-    <a style="text-decoration:none;color:black;padding-left: 160px;" href="../View/registration.html"><b>Sign Up</b></a>
-
-
 
     <script src="../View/style/Script/login.js"></script>
     
