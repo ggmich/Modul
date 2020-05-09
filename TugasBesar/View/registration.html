@@ -1,83 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
+
   <head>
+    
     <meta charset="utf-8">
 
-    <title>Registration</title>
+    <title>TogetherWeCan - Registrasi</title>
 
-    <link rel="stylesheet" href="../View/style/loginStyle.css">
-    <link rel="stylesheet" href="../View/style/defaultButton.css">
+    <link rel="stylesheet" href="../View/style/registration.css">
 
   </head>
 
-  <body style="background-image : url('style/fund.png')">
+  <body>
 
-    <form method="post" action="../Controller/registration.php">
+    <div class="main">
+
+      <p>TogetherWeCan !</p>
+
+      <hr>
+
+      <h1 style="margin-left: 10px;">Registrasi</h1>
+
+      <br>
+
       <div class="divLogin">
 
-        <h1 style="padding-left: 90px;">Registration</h1>
+        <form method="post" action="../Controller/login.php">
 
-        <div class="input-group">
+          <div class="input-group">
 
-          <label id="label-1">Username</label>
-          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
-          id="input-1" type="text" name="username" required>
+            <label id="label-1">Username</label>
+            <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+            id="input-1" type="text" name="username" required>
+  
+          </div>
+  
+          <br>
+  
+          <div class="input-group">
+  
+            <label id="label-1">Full Name</label>
+            <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+            id="input-1" type="text" name="namaLengkap" required>
+  
+          </div>
+  
+          <br>
+  
+          <div class="input-group">
+  
+            <label id="label-1">Email</label>
+            <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+            id="input-1" type="email" name="email" required>
+  
+          </div>
+  
+          <br>
+  
+          <div class="input-group">
+  
+            <label id="label-2">Password</label>
+            <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+             type="password" name="password" required></input>
+  
+          </div>
+  
+          <br>
+  
+          <div class="input-group">
+  
+            <label id="label-1">Mobile Number</label>
+            <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+            id="input-1" type="text" name="noHp" required>
+  
+          </div>
+  
+          <br>
+  
+  
 
-        </div>
+          <div>
+            <input class="button" type="submit" value="Registrasi">
+          </div>
 
-        <br>
-
-        <div class="input-group">
-
-          <label id="label-1">Full Name</label>
-          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
-          id="input-1" type="text" name="namaLengkap" required>
-
-        </div>
-
-        <br>
-
-        <div class="input-group">
-
-          <label id="label-1">Email</label>
-          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
-          id="input-1" type="email" name="email" required>
-
-        </div>
-
-        <br>
-
-        <div class="input-group">
-
-          <label id="label-2">Password</label>
-          <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
-           type="password" name="password" required></input>
-
-        </div>
-
-        <br>
-
-        <div class="input-group">
-
-          <label id="label-1">Mobile Number</label>
-          <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
-          id="input-1" type="text" name="noHp" required>
-
-        </div>
-
-        <br>
-
-        <div>
-          <input class="button" type="submit" value="Sign Up">
-        </div>
+        </form>
 
       </div>
-      <br>
-    </form>
 
+      <a id="fp" style="margin-left: 10px;font-size: 20px;" href="../View/forgotPassword.html"><b>Forgot Password?</b></a>
 
+      <br><hr><br>
+
+      <a style="font-size: 20px;"><b>Sudah punya akun? &nbsp;</b><a id="su" style="font-size: 20px;" href="../View/login.html"><b>Log In</b></a></a>
+
+    </div>
 
     <script src="../View/style/Script/login.js"></script>
-
+    
   </body>
+
 </html>
