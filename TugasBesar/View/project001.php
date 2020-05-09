@@ -54,7 +54,7 @@
   	</fieldset>
   	<?php 
 
-  		// MASUKIN PHP Donasi dana disini
+  		// MASUKIN PHP Total Donasi dana disini
 
   	?>
   	
