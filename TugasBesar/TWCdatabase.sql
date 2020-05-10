@@ -68,8 +68,6 @@ CREATE TABLE IF NOT EXISTS User (
 
 
 
-
-
 ALTER TABLE User
   ADD PRIMARY KEY (userName);
 
