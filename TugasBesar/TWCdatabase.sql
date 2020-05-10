@@ -77,12 +77,3 @@ ALTER TABLE User
     CREATE  UNIQUE INDEX dnsi ON donasi(idDonasi) USING BTREE;
 	CREATE  UNIQUE INDEX statAn ON donasi(statAnonim) USING BITMAP;
 ----------------------------------------------
-
-ALTER TABLE book
-  MODIFY book_id int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
-
-ALTER TABLE rent
-  MODIFY id int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=36;
-
-ALTER TABLE rent
-ADD CONSTRAINT book_id FOREIGN KEY (book_id) REFERENCES book (book_id);
