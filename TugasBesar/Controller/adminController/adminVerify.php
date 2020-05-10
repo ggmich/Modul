@@ -7,7 +7,7 @@
     $verifyId = $_POST("verifyId")
 
     // query for delete record in campaign table
-    $query = "UPDATE `Campaign` SET verifikasi=`TRUE` WHERE idCampaign = $verifyId";
+    $query = "UPDATE `Campaign` SET verifikasi=`TRUE` WHERE idCampaign = `$verifyId`";
 
     // run $query
     if(mysqli_query($connection, $query)){

@@ -56,7 +56,8 @@ CREATE TABLE IF NOT EXISTS Donasi (
   idDonatur int(10) NOT NULL,
   totalDonasi decimal(13,2) NOT NULL,
   tanggalDonasi date NOT NULL,
-  statAnonim varchar(20) NOT NULL
+  statAnonim varchar(20) NOT NULL,
+  statTransaksi boolean
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
 
 CREATE TABLE IF NOT EXISTS PencairanDana (

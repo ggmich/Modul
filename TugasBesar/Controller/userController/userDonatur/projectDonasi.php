@@ -22,8 +22,8 @@ if(isset($_POST['jumlahDonasi'])){
   $idCampaign = $_SESSION["idCampaign"];
 
   // query
-  $donasiQuery = "INSERT INTO `campaign` (`idTransaksi`,`idCampaign`,`idDonatur`,`totalDonasi`,`tanggalDonasi`,`statAnonim`)
-  VALUES ('','$idCampaign','$idDonatur','$jumlahDonasi','$date','$statAnonim')";
+  $donasiQuery = "INSERT INTO `Donasi` (`idTransaksi`,`idCampaign`,`idDonatur`,`totalDonasi`,`tanggalDonasi`,`statAnonim`,`statTransaksi`)
+  VALUES ('','$idCampaign','$idDonatur','$jumlahDonasi','$date','$statAnonim','')";
 
   // $connection variable from connection.php
   if(mysqli_query($connection, $donasiQuery)){
