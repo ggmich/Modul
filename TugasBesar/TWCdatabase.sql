@@ -22,6 +22,7 @@ ADD PRIMARY KEY (idCampaign);
 
 CREATE TABLE IF NOT EXISTS fundraiser (
   idFundraiser int(10) NOT NULL,
+  userName varchar(20) NOT NULL,
   nomorRekening int(12) NOT NULL,
   namaOrganisasi varchar(20) NOT NULL,
   alamatOrganisasi varchar(50) NOT NULL
@@ -31,13 +32,15 @@ ALTER TABLE fundraiser
   ADD PRIMARY KEY (idFundraiser);
 
 CREATE TABLE IF NOT EXISTS donatur (
-  idDonatur int(10) NOT NULL
+  idDonatur int(10) NOT NULL,
+  userName varchar(20) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
 
 ALTER TABLE donatur
   ADD PRIMARY KEY (idDonatur);
 
 CREATE TABLE IF NOT EXISTS User (
+  idUser int(10) NOT NULL,
   userName varchar(20) NOT NULL,
   namaLengkap varchar(50) NOT NULL,
   email varchar(30) NOT NULL,

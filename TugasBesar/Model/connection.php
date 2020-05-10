@@ -1,4 +1,9 @@
 <?php
+// start session for every connection
+session_start();
+?>
+
+<?php
 /*
     Essential connection module for Controller Folder
 */

@@ -8,35 +8,30 @@ include ('../Model/connection.php');
 // check html textBox empty or not
 if(isset($_POST['jumlahDonasi'])){
 
-  // initialize jumlah donasi from projectYYY.php
+  //extractnya lewat session ID usernya dari cookie
+  $username = $_SESSION['username'];
+  $queryFindIdFundraiser = "SELECT idUser FROM User WHERE username = $username";
+  $result = $connection -> query($queryFindIdFundraiser);
+  $row = $result-> fetch_assoc();
+  $idDonatur = $row['idUser'];
+
+  // initialize jumlah donasi & Id campaign from projectYYY.php
   $jumlahDonasi = $_POST['jumlahDonasi'];
-  
+  $statAnonim = $_POST['statAnonim'];
+  $date = date('Y/m/d');
+  $idCampaign = $_SESSION["idCampaign"];
 
-  // credential registration in database
-  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '$namaLengkap', '$email', '$password', '$noHp')";
+  // query
+  $donasiQuery = "INSERT INTO `campaign` (`idTransaksi`,`idCampaign`,`idDonatur`,`totalDonasi`,`tanggalDonasi`,`statAnonim`)
+  VALUES ('','$idCampaign','$idDonatur','$jumlahDonasi','$date','$statAnonim')";
 
-  // check credential in database
-  $checkQuery = "select * from User where username='$username'";
-  $result = mysqli_query($connection, $checkQuery) or die(mysqli_error($connection));
-  $count = mysqli_num_rows($result);
-
-  if($count >= 1){
-    // Login Credentials verified
-    echo "<script type='text/javascript'>alert('Invalid Login Credentials')</script>";
-    header("Location: ../View/registration.html");
-
-  }else{
-
-    // $connection variable from connection.php
-    if(mysqli_query($connection, $registerQuery)){
-      echo "Records inserted successfully.";
-      header("Location: ../View/index.php");
-    } else{
-      echo "ERROR: Could not able to execute $registerQuery. " . mysqli_error($connection);
-    }
+  // $connection variable from connection.php
+  if(mysqli_query($connection, $donasiQuery)){
+    echo "Records inserted successfully.";
+    header("Location: ../View/konfirmasiDonasi.php");
+  } else{
+    echo "ERROR: Could not able to execute $donasiQuery. " . mysqli_error($connection);
   }
-
-
 
   // Close connection
   mysqli_close($connection);

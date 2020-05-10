@@ -4,14 +4,16 @@
 	$projectCode = 1;
 ?>
 
-<?php 
+<?php
 	include "../Model/connection.php";
 	$imageSelectQuery = " SELECT * from campaign WHERE idCampaign = $projectCode";
+	$_SESSION["idCampaign"] = $projectCode;
+
 	$result = $connection-> query($imageSelectQuery);
 
 	if($result-> num_rows > 0){
 		$row = $result-> fetch_assoc();
-					
+
 ?>
 
 <head>
@@ -33,7 +35,7 @@
 
     </ul>
   </nav>
-  
+
   <article>
     <h1><?php echo $row["namaCampaign"]; ?></h1>
     <p><?php echo $row["story"]; } ?></p>
@@ -52,12 +54,12 @@
   	<fieldset>
           <legend>Total Dana</legend>
   	</fieldset>
-  	<?php 
+  	<?php
 
   		// MASUKIN PHP Total Donasi dana disini
 
   	?>
-  	
+
   </aside>
 </section>
 

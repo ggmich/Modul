@@ -18,10 +18,8 @@ if(isset($_POST['username']) and isset($_POST['password'])){
 
   if($count == 1){
     // Login Credentials verified
-    //mulai session dan register variabelnya
-    session_start();
-    session_register(‘username’);
-
+    // register session variabelnya
+    $_SESSION["username"] = $username;
 
     echo "<script type='text/javascript'>alert('Login Credentials verified')</script>";
     header("Location: ../View/home.php");
