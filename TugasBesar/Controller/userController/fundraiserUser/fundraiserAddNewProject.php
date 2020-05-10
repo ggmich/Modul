@@ -2,6 +2,8 @@
 /*
     Essential connection module for Controller Folder
 */
+// start session for every connection
+session_start();
 
 // query for connect to phpMyAdmin default Credentials
 $connection = mysqli_connect('localhost','root','');
@@ -42,17 +44,18 @@ if(isset($_POST['nama']) and isset($_POST['story']) and isset($_POST['image'])){
   $address = $_POST['address'];
   $fundTarget = $_POST['fundTarget'];
   $image = $_POST['image'];
-  /*
 
-  $idFundraiser = ? (Masukin ke tabel campaign )
 
-  extractnya lewat session ID usernya dari cookie
-
-  */
+  //extractnya lewat session ID usernya dari cookie
+  $username = $_SESSION['username'];
+  $queryFindIdFundraiser = "SELECT idUser FROM User WHERE username = $username";
+  $result = $connection -> query($queryFindIdFundraiser);
+  $row = $result-> fetch_assoc();
+  $idFundraiser = $row['idUser'];
 
   // query for database
-  $registerQuery = "INSERT INTO `campaign` (`idCampaign`, `namaCampaign`, `idFundraiser`, `tglMulai`, `tglSelesai`, `fundTarget`, `story`, `type`, `ktp`, `phone`, `image`, `campaignLink`, `address`)
-  VALUES ('', '$name', '', '$date', '', '$fundTarget', '$story', '$type', '$ktp', '$phone', '$image', NULL, '$address')";
+  $registerQuery = "INSERT INTO `campaign` (`idCampaign` , `namaCampaign`, `idFundraiser`, `tglMulai`, `tglSelesai`, `fundTarget`, `story`, `type`, `ktp`, `phone`, `image`, `campaignLink`, `address`)
+  VALUES ('', '$name', '$idFundraiser', '$date', '', '$fundTarget', '$story', '$type', '$ktp', '$phone', '$image', NULL, '$address')";
 
 
   // $connection variable from connection.php

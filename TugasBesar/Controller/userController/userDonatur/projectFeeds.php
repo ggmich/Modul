@@ -2,14 +2,14 @@
 /*
     Project Feeds for donatur
     Update HTML function from database
-    Criteria: - Listed Project              
+    Criteria: - Listed Project
 */
     include "../Model/connection.php";
  ?>
 
-<?php 
+<?php
 
-			$imageSelectQuery = " SELECT image, campaignLink, namaCampaign from campaign";
+			$imageSelectQuery = " SELECT image, campaignLink, namaCampaign from campaign WHERE status='TRUE'";
 			$result = $connection-> query($imageSelectQuery);
 
 			if($result-> num_rows > 0){
@@ -18,10 +18,10 @@
 		?>
 
 		<?php
-					echo '<img src="data:image:base64,'.base64_encode($row['image']).'">';
+          echo "<img src='".$row['image']."' height="100px" widht="100px">'";
 		?>
 
-		<?php			
+		<?php
 					echo "</td><td>";
 					echo "<a href='".$row["campaignLink"]."'>";
 					echo $row["namaCampaign"]."</a>";
