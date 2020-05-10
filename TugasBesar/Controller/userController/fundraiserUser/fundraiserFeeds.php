@@ -27,7 +27,7 @@
  		?>
 
  		<?php
- 					echo '<img src="data:image:base64,'.base64_encode($row['image']).'">';
+ 					echo "<img src='".$row['image']."' height="100px" widht="100px">'";
  		?>
 
  		<?php

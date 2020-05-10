@@ -6,13 +6,14 @@ CREATE TABLE IF NOT EXISTS campaign (
   tglSelesai date NOT NULL,
   fundTarget int(20) NOT NULL,
   jumlahPencairanDana decimal(13,2) NOT NULL,
-   totalDonasi decimal(13,2) NOT NULL,
+  totalDonasi decimal(13,2) NOT NULL,
   story varchar(250) NOT NULL,
   type varchar(50) NOT NULL,
   ktp int(30) NOT NULL,
   phone int(15) NOT NULL,
-  image LONGBLOB NOT NULL,
+  image VARCHAR(1000) NOT NULL,
   campaignLink varchar(1000),
+  status boolean,
   address varchar(150) NOT NULL
 
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
@@ -56,6 +57,13 @@ CREATE TABLE IF NOT EXISTS Donasi (
   totalDonasi decimal(13,2) NOT NULL,
   tanggalDonasi date NOT NULL,
   statAnonim varchar(20) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS PencairanDana (
+  idTransaksi int(10) NOT NULL,
+  idCampaign int(10) NOT NULL,
+  status BOOLEAN NOT NULL,
+  totalPencairan decimal(13,2) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
 
 
