@@ -68,9 +68,6 @@ CREATE TABLE IF NOT EXISTS User (
 
 
 
-ALTER TABLE User
-  ADD PRIMARY KEY (idUser);
-
   CREATE  UNIQUE INDEX Cmpgn ON campaign(idCampaign) USING BTREE;
  CREATE  UNIQUE INDEX fnraiser ON fundraiser(idFundraiser) USING BTREE;
   CREATE  UNIQUE INDEX dntr ON donatur(idDonatur) USING BTREE;
