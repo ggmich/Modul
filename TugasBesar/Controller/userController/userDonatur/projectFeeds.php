@@ -9,7 +9,7 @@
 
 <?php
 
-			$imageSelectQuery = " SELECT image, campaignLink, namaCampaign from campaign WHERE status='TRUE'";
+			$imageSelectQuery = " SELECT image, campaignLink, namaCampaign from campaign WHERE status='1'";
 			$result = $connection-> query($imageSelectQuery);
 
 			if($result-> num_rows > 0){
@@ -18,7 +18,8 @@
 		?>
 
 		<?php
-          echo "<img src='".$row['image']."' height="100px" widht="100px">'";
+
+          echo "<img src='".$row['image']."' height='200px' width='200px' >";
 		?>
 
 		<?php

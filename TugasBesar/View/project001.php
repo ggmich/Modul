@@ -1,7 +1,7 @@
 <?php include "../View/headerUser.html"; ?>
 <?php
 	// hard code for project code (idCampaign)
-	$projectCode = 1;
+	$projectCode = 4;
 ?>
 
 <?php
@@ -29,7 +29,7 @@
 <section>
   <nav>
     <ul>
-      <li><img src="https://cdn.pixabay.com/photo/2016/02/21/12/54/wallpaper-1213528_960_720.png" height="200px" width="200px"></li>
+      <li><?php echo "<img src='".$row['image']."' height='200px' width='200px' >"; ?></li>
 
       <li><h1> <?php echo $row["namaCampaign"]; ?> </h1></li>
 
