@@ -7,7 +7,7 @@ require ('../Model/connection.php');
 
 // check html textBox empty or not
 
-require('PHPMailer/PHPMailerAutoload.php');
+require ('../userDonatur/PHPMailerAutoLoad.php');
 if (isset($_POST) & !empty($_POST)) {
     $username = mysqli_real_escape_string($connection, $_POST['username']);
     $sql = "SELECT * FROM `login` WHERE username = '$username'";

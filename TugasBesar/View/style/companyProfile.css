@@ -1,0 +1,76 @@
+
+body{
+    margin: 0px;
+    font-family: AmaticSC-Regular;
+    background-image: url("donate.png");
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    opacity: 85%;
+}
+.judul{
+    font-weight:bold ;
+    font-size: 50px;
+    font-family : AmaticSC-Regular;
+    text-shadow: 3px 3px gray;
+    color: lightskyblue;
+    margin-top: 0%;
+   text-align: center;
+   margin-left: 200px;
+   border-bottom: 3px thin grey;
+   margin-top: -45px;
+}
+.isi h2{
+    margin-left: 290px;
+}
+.isi{
+    background-color: white;
+    width: 1000px;
+    padding: 20px;
+    margin-left: 160px ;
+    font-family :PlayFair-Regular;
+    text-align: justify;
+    font-size: 16px;
+}
+pre {
+    
+}
+.button{
+    background-color: rgb(172, 213, 240);
+    border: none;
+    border-radius: 10px;
+    width : 80px;
+    height : 70px;
+    position: relative;
+    margin : auto;
+    margin-left : 450px;
+    font-family : AmaticSC-Regular;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+   
+  footer p{
+    background-color: grey;
+    padding: 10px 20px;
+    color:white;
+    font-size: 20px;
+    margin-left : -1200px;
+    margin-bottom: 0px;
+    text-align: center;  
+    vertical-align: bottom; 
+    display: block;
+    position: fixed;
+    bottom:0px;
+    width: 100%;
+    }
+@font-face{
+    font-family : AmaticSC-Regular;
+    src : url(fonts/AmaticSC-Regular.ttf);
+  }
+
+@font-face{
+    font-family : PlayFair-Regular;
+    src : url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+  }
+  
