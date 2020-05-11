@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+    
+    <meta charset="utf-8">
+
+    <title>TogetherWeCan - Admin Login</title>
+
+    <link rel="stylesheet" href="../View/style/AdminLoginStyle.css">
+
+  </head>
+
+  <body>
+
+    <div class="main">
+
+      <p>TogetherWeCan !</p>
+
+      <hr>
+
+      <h1 style="margin-left: 10px;">Welcome, Admin!</h1>
+
+      <br>
+
+      <div class="divLogin">
+
+        <form method="post" action="../Controller/">
+
+          <div class="input-group">
+
+            <label id="label-1" style="font-size: 20px;">Username</label>
+            <input onkeyup="checkLabel('label-1',this)" onkeydown="checkLabel('label-1',this)"
+            id="input-1" type="text" name="username" required>
+
+          </div>
+
+          <br>
+
+          <div class="input-group">
+
+            <label id="label-2" style="font-size: 20px;">Password</label>
+            <input onkeyup="checkLabel('label-2',this)" onkeydown="checkLabel('label-2',this)"
+            type="password" name="password" required></input>
+
+          </div>
+
+          <br>
+
+          <div>
+            <input class="button" type="submit" value="Login">
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <script src="../View/style/Script/login.js"></script>
+    
+  </body>
+
+</html>
