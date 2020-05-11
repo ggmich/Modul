@@ -3,14 +3,32 @@
 /*
     donatur add new project method
 */
-include ('../Model/connection.php');
+session_start();
+$connection = mysqli_connect('localhost','root','');
 
+// if connection fail terminate
+if (!$connection){
+
+    die("Database Connection Failed" . mysqli_error($connection));
+}
+
+// connect to togetherWeCan Database in server
+$select_db = mysqli_select_db($connection, 'togetherWeCan');
+
+// if connection fail terminate
+if (!$select_db){
+    die("Database Selection Failed" . mysqli_error($connection));
+}
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+?>
+
+<?php
 // check html textBox empty or not
 if(isset($_POST['jumlahDonasi'])){
 
   //extractnya lewat session ID usernya dari cookie
   $username = $_SESSION['username'];
-  $queryFindIdFundraiser = "SELECT idUser FROM User WHERE username = $username";
+  $queryFindIdFundraiser = "select * from User where username = '$username'";
   $result = $connection -> query($queryFindIdFundraiser);
   $row = $result-> fetch_assoc();
   $idDonatur = $row['idUser'];
@@ -23,7 +41,7 @@ if(isset($_POST['jumlahDonasi'])){
 
   // query
   $donasiQuery = "INSERT INTO `Donasi` (`idTransaksi`,`idCampaign`,`idDonatur`,`totalDonasi`,`tanggalDonasi`,`statAnonim`,`statTransaksi`)
-  VALUES ('','$idCampaign','$idDonatur','$jumlahDonasi','$date','$statAnonim','')";
+  VALUES ('1','$idCampaign','$idDonatur','$jumlahDonasi','$date','$statAnonim','0')";
 
   // $connection variable from connection.php
   if(mysqli_query($connection, $donasiQuery)){

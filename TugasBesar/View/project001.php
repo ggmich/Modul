@@ -41,24 +41,28 @@
     <p><?php echo $row["story"]; } ?></p>
     <br>
     <hr>
-    <form method="post" action="../Controller/..........">
+    <form method="post" action="../Controller/userController/userDonatur/projectDonasi.php">
 
     	  <label id="label-1">Jumlah Donasi Anda</label><br><br>
           <input id="input-1" type="text" name="jumlahDonasi" required><br><br>
-          <input class="button" type="submit" value="donasi">
+					<input type="radio" name="statAnonim" value="Anonim">Anonim<br>
+					<input type="radio" name="statAnonim" value="Tidak Anonim">Tidak Anonim<br><br>
+          <input class="button" type="submit" value="donasi"><br>
+
 
     </form>
   </article>
 
   <aside>
   	<fieldset>
-          <legend>Total Dana</legend>
+          <legend>Donation Target</legend>
+					<h4> <?php echo "Rp ".$row["fundTarget"].",00"; ?> </h4>
+					<fieldset>
+
+						<legend>Current Fund</legend>
+							<h4> <?php echo "Rp ".$row["totalDonasi"].",00"; ?> </h4>
+					</fieldset>
   	</fieldset>
-  	<?php
-
-  		// MASUKIN PHP Total Donasi dana disini
-
-  	?>
 
   </aside>
 </section>
