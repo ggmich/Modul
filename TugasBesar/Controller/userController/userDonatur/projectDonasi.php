@@ -42,9 +42,21 @@ if(isset($_POST['jumlahDonasi'])){
   //donation session_start
   $_SESSION['currentDonation'] = $jumlahDonasi;
 
+  //extract id terakhir
+  $lastIdQuery = "SELECT MAX(idTransaksi) AS 'max' FROM Donasi";
+  $extractId = $connection -> query($lastIdQuery);
+  $lastIdRow = $extractId -> fetch_assoc();
+  $lastId = $lastIdRow['max'];
+  if($lastId == null){
+    $lastId = 1
+  }
+  else{
+    $lastId = $lastId + 1;
+  }
+
   // query
   $donasiQuery = "INSERT INTO `Donasi` (`idTransaksi`,`idCampaign`,`idDonatur`,`totalDonasi`,`tanggalDonasi`,`statAnonim`,`statTransaksi`)
-  VALUES ('1','$idCampaign','$idDonatur','$jumlahDonasi','$date','$statAnonim','0')";
+  VALUES ('$lastId','$idCampaign','$idDonatur','$jumlahDonasi','$date','$statAnonim','0')";
 
   // $connection variable from connection.php
   if(mysqli_query($connection, $donasiQuery)){

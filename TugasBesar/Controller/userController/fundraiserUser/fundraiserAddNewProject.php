@@ -55,7 +55,13 @@ if(isset($_POST['nama']) and isset($_POST['story']) and isset($_POST['image'])){
   $extractId = $connection -> query($lastIdQuery);
   $lastIdRow = $extractId -> fetch_assoc();
   $lastId = $lastIdRow['max'];
-  $lastId = $lastId + 1;
+  if($lastId == null){
+    $lastId = 1
+  }
+  else{
+    $lastId = $lastId + 1;
+  }
+
 
 
   $queryFindIdFundraiser = "select `idUser` FROM User WHERE userName = '$username';";

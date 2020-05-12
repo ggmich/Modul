@@ -14,8 +14,20 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   $password = $_POST['password'];
   $noHp = $_POST['noHp'];
 
+  //extract id terakhir
+  $lastIdQuery = "SELECT MAX(idUser) AS 'max' FROM User";
+  $extractId = $connection -> query($lastIdQuery);
+  $lastIdRow = $extractId -> fetch_assoc();
+  $lastId = $lastIdRow['max'];
+  if($lastId == null){
+    $lastId = 1
+  }
+  else{
+    $lastId = $lastId + 1;
+  }
+
   // credential registration in database
-  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`) VALUES ('$username', '$namaLengkap', '$email', '$password', '$noHp')";
+  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`,`statusAdmin`) VALUES ('$username', '$namaLengkap', '$email', '$password', '$noHp','0')";
 
   // check credential in database
   $checkQuery = "select * from User where username='$username'";

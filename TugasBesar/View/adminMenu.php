@@ -12,10 +12,10 @@
 <body>
     <div class="admin">
         <ul style="list-style: none;">
-            <li><a href="">Verifikasi Fundraiser</a></li>
-            <li><a href="">Verifikasi Campaign</a></li>
-            <li><a href="">Verifikasi Donasi</a></li>
-            <li><a href="">Verifikasi Penarikan Dana</a></li>
+            <li><a href="http://192.168.64.2/Modul/TugasBesar/View/adminDelete.php">Delete Campaign</a></li>
+            <li><a href="http://192.168.64.2/Modul/TugasBesar/View/adminVerify.php">Verifikasi Campaign</a></li>
+            <li><a href="http://192.168.64.2/Modul/TugasBesar/View/adminAproveDonation.php">Verifikasi Donasi</a></li>
+            <li><a href="http://192.168.64.2/Modul/TugasBesar/View/adminAproveMoney.php">Verifikasi Penarikan Dana</a></li>
         </ul>
     </div>
 </body>
