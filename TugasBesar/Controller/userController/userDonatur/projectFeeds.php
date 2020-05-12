@@ -24,7 +24,7 @@
 
 		<?php
 					echo "</td><td>";
-					echo "<a href='".$row["campaignLink"]."'>";
+					echo "<a href='".$row["campaignLink"].".php'>";
 					echo $row["namaCampaign"]."</a>";
 					echo "</td></tr>";
 				}

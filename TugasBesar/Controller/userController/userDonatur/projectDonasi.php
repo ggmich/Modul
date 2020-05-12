@@ -39,6 +39,9 @@ if(isset($_POST['jumlahDonasi'])){
   $date = date('Y/m/d');
   $idCampaign = $_SESSION["idCampaign"];
 
+  //donation session_start
+  $_SESSION['currentDonation'] = $jumlahDonasi;
+
   // query
   $donasiQuery = "INSERT INTO `Donasi` (`idTransaksi`,`idCampaign`,`idDonatur`,`totalDonasi`,`tanggalDonasi`,`statAnonim`,`statTransaksi`)
   VALUES ('1','$idCampaign','$idDonatur','$jumlahDonasi','$date','$statAnonim','0')";
@@ -46,7 +49,7 @@ if(isset($_POST['jumlahDonasi'])){
   // $connection variable from connection.php
   if(mysqli_query($connection, $donasiQuery)){
     echo "Records inserted successfully.";
-    header("Location: ../View/konfirmasiDonasi.php");
+    header("Location: http://192.168.64.2/Modul/TugasBesar/View/konfirmasiDonasi.php");
   } else{
     echo "ERROR: Could not able to execute $donasiQuery. " . mysqli_error($connection);
   }

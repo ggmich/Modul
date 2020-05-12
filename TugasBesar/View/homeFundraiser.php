@@ -1,12 +1,18 @@
-<?php 
-	
+<?php
+	include "../View/headerUser.html";
 ?>
-<?php include "../View/style/headerUser.html" ?>
+
+	<hr>
+  <br>
+
 
 	<table>
-		<tr>
-			<th><a href="../FundraiserNewProject.html"> <img src="../View/style/plus.png"></a>"</th>
-		</tr>
+		<?php include "../Controller/userController/fundraiserUser/fundraiserFeeds.php"; ?>
 	</table>
-	
-<?php include "../View/style/footer.html" ?>
+
+
+<?php
+
+	include "../View/footer.html";
+
+?>
