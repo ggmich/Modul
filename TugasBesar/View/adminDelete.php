@@ -1,14 +1,4 @@
-<?php
-	include "../Model/connection.php";
-	$imageSelectQuery = " SELECT * from campaign WHERE idCampaign = $projectCode";
-	$_SESSION["idCampaign"] = $projectCode;
 
-	$result = $connection-> query($imageSelectQuery);
-
-	if($result-> num_rows > 0){
-		$row = $result-> fetch_assoc();
-
-?>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../View/style/projectDonasiStyle.css">
@@ -48,5 +38,3 @@
 
 </body>
 </html>
-
-<?php include "../View/footer.html";?>
