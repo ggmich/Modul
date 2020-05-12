@@ -7,7 +7,7 @@
     $deleteId = $_POST("deleteId")
 
     // query for delete record in campaign table
-    $query = "DELETE FROM `Campaign` WHERE idCampaign = $deleteId";
+    $query = "DELETE FROM `Campaign` WHERE idCampaign = '$deleteId'";
 
     // run $query
     if(mysqli_query($connection, $query)){
