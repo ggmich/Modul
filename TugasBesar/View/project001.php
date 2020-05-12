@@ -1,7 +1,7 @@
 <?php include "../View/headerUser.html"; ?>
 <?php
 	// hard code for project code (idCampaign)
-	$projectCode = 4;
+	$projectCode = 1;
 ?>
 
 <?php

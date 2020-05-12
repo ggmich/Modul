@@ -56,7 +56,7 @@ if(isset($_POST['nama']) and isset($_POST['story']) and isset($_POST['image'])){
   $lastIdRow = $extractId -> fetch_assoc();
   $lastId = $lastIdRow['max'];
   if($lastId == null){
-    $lastId = 1
+    $lastId = 1;
   }
   else{
     $lastId = $lastId + 1;

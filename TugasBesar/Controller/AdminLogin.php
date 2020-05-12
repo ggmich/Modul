@@ -29,7 +29,7 @@ if(isset($_POST['username']) and isset($_POST['password'])){
   }else{
     // Login Credentials invalid
     echo "<script type='text/javascript'>alert('Invalid Login Credentials')</script>";
-    header("Location: ../View/adminLogin.php");
+    header("Location:http://192.168.64.2/Modul/TugasBesar/View/adminLogin.html");
   }
 }
 ?>

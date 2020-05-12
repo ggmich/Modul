@@ -1,6 +1,6 @@
 <?php
 	// hard code for project code (idCampaign)
-	$projectCode = 4;
+	$projectCode = 1;
   $_SESSION["idCampaign"] = $projectCode;
 ?>
 <!DOCTYPE html>

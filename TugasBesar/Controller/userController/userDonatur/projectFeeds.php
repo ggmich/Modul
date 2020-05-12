@@ -30,7 +30,7 @@
 				}
 			}
 			else{
-				echo "gagal fetching";
+				echo "Belum ada project";
 			}
 
 			$connection-> close();

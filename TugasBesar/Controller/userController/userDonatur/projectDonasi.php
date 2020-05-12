@@ -48,7 +48,7 @@ if(isset($_POST['jumlahDonasi'])){
   $lastIdRow = $extractId -> fetch_assoc();
   $lastId = $lastIdRow['max'];
   if($lastId == null){
-    $lastId = 1
+    $lastId = 1;
   }
   else{
     $lastId = $lastId + 1;
