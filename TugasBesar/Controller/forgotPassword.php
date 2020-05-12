@@ -7,12 +7,13 @@ require ('../Model/connection.php');
 
 // check html textBox empty or not
 
-require ('../userDonatur/PHPMailerAutoLoad.php');
-if (isset($_POST) & !empty($_POST)) {
-    $username = mysqli_real_escape_string($connection, $_POST['username']);
-    $sql = "SELECT * FROM `login` WHERE username = '$username'";
+require ('../Controller/userController/userDonatur/PHPMailerAutoLoad.php');
+if (isset($_POST['username']) & !empty($_POST['username'])) {
+    $username = $_POST['username'];
+    $sql = "select * from User where username='$username'";
     $res = mysqli_query($connection, $sql);
     $count = mysqli_num_rows($res);
+    echo $count;
     if ($count == 1) {
         $r = mysqli_fetch_assoc($res);
         $password = $r['password'];
