@@ -3,10 +3,12 @@ body{
     
    }
    #main{
+    font-family : AmaticSC-Regular;
     border-style: soli gray;
     height : 50px ;
-    background-color: gray;
+    background-color: #2471A3;
     margin : 0px;
+    font-size: 22px;
  
    }
    a.listlink {
@@ -20,7 +22,7 @@ body{
     
    }
    a.listlink:hover {
-    background-color:yellow;
+    background-color:rgb(172, 213, 240);
     color :white ;
     text-decoration: none;
    }
@@ -33,4 +35,9 @@ body{
    a.listlink:active{
     text-decoration: none;
    }
+
+   @font-face{
+    font-family : AmaticSC-Regular;
+    src : url(fonts/AmaticSC-Regular.ttf);
+  }
  
