@@ -20,23 +20,19 @@
 
 <body style="background-image : url('style/fund.png')">
 
-  <form method="post" action="../Controller/userController/fundraiserUser/fundraiserUpdateProject.php">
+  <form method="post" action="../Controller/userController/fundraiserUser/fundraiserRequestMoney.php">
     <div class="main">
 
       <div class="input">
 
         <fieldset>
-          <legend>Campaign Information Edit</legend>
+          <legend>Request Money</legend>
           <table id="campaignDetails"></table>
 
           <br>
-            <td><label>Keterangan : </label></td>
-            <td><input type="text" id="keterangan" name="story"></td>
+            <td><label>Jumlah Uang : </label></td>
+            <td><input type="text" id="keterangan" name="jumlahPencairanDana"></td>
           </tr>
-          <br>
-            <label for="gambarCampaign">Tambahkan Link URL gambar untuk lebih meyakinkan para donatur</label>
-          <br>
-            <input type="url" id="gambarCampaign" name="image">
           <br>
             <input class="button" type="submit" value="save">
 
@@ -46,14 +42,11 @@
 
     </div>
   </form>
-  <button onclick="toRequestMoney()">Request Money </button>
+	
+
   <button onclick="backToMenu()">Back to menu</button>
 
   <script>
-  function toRequestMoney() {
-    location.replace("../View/project001_Fundraiser_RequestMoney.php");
-  }
-
   function backToMenu() {
     location.replace("../View/homeFundraiser.php");
   }
