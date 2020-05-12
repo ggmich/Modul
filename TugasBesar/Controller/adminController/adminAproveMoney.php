@@ -37,7 +37,7 @@ if (!$select_db){
     $transactionId = $_POST['transactionId'];
 
     // query for delete record in campaign table
-    $query = "UPDATE `PencairanDana` SET status=`$verifyId` WHERE idTransaksi = `$transactionId`";
+    $query = "UPDATE `PencairanDana` SET status='$verifyId' WHERE idTransaksi = '$transactionId'";
 
     // run $query
     if(mysqli_query($connection, $query)){

@@ -45,6 +45,7 @@ if(isset($_POST['nama']) and isset($_POST['story']) and isset($_POST['image'])){
   $address = $_POST['address'];
   $fundTarget = $_POST['fundTarget'];
   $image = $_POST['image'];
+  $noRekening = $_POST['noRekening'];
 
 
   //extractnya lewat session ID usernya dari cookie
@@ -70,8 +71,8 @@ if(isset($_POST['nama']) and isset($_POST['story']) and isset($_POST['image'])){
   $idFundraiser = $row['idUser'];
 
   // query for database
-  $registerQuery = "INSERT INTO `campaign` (`idCampaign`, `namaCampaign`, `idFundraiser`, `tglMulai`, `tglSelesai`, `fundTarget`, `jumlahPencairanDana`, `totalDonasi`, `story`, `type`, `ktp`, `phone`, `image`, `campaignLink`, `status`, `address`)
-  VALUES ('$lastId', '$name', '$idFundraiser', '$date', '$date', '$fundTarget', '0', '0', '$story', '$type', '$ktp', '$phone', '$image', NULL, '0', '$address')";
+  $registerQuery = "INSERT INTO `campaign` (`idCampaign`, `namaCampaign`, `idFundraiser`, `tglMulai`, `tglSelesai`, `fundTarget`, `jumlahPencairanDana`, `totalDonasi`, `story`, `type`, `ktp`, `phone`, `image`, `campaignLink`, `status`, `address`,`noRekening`)
+  VALUES ('$lastId', '$name', '$idFundraiser', '$date', '$date', '$fundTarget', '0', '0', '$story', '$type', '$ktp', '$phone', '$image', NULL, '0', '$address','$noRekening')";
 
 
   // $connection variable from connection.php

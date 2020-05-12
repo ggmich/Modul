@@ -16,7 +16,7 @@
   </nav>
 
   <article>
-    <h1>Admin Delete Campaign Form</h1>
+    <h1>Admin Pencairan Dana Form</h1>
     <br>
     <hr>
     <form method="post" action="../Controller/adminController/adminAproveMoney.php">

@@ -31,7 +31,8 @@ CREATE TABLE IF NOT EXISTS campaign (
   image VARCHAR(1000) NOT NULL,
   campaignLink varchar(1000),
   status boolean,
-  address varchar(150) NOT NULL
+  address varchar(150) NOT NULL,
+  noRekening int(30) NOT NULL
 
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
