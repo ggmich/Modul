@@ -52,7 +52,7 @@
 
     </form>
   </article>
-
+  <button onclick="location.href='../Controller/printLaporan.php';">Print laporan</button>
   <aside>
   	<fieldset>
           <legend>Donation Target</legend>
