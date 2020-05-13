@@ -20,7 +20,7 @@
       $findIdUser = "SELECT idUser FROM `User` WHERE User.userName='$username'";
       $result = $connection -> query($findIdUser);
       $rowIdUser = $result-> fetch_assoc();
-      $idUser = $row['idUser'];
+      $idUser = $rowIdUser['idUser'];
 
       // check old pass in database
       $checkQuery = "select * from User where username='$username' and password='$oldPass'";
@@ -30,14 +30,14 @@
       // if old password right
       if($count == 1){
 
-        $changePassQuery = "UPDATE `User` SET `password`='$newPass' WHERE id='$idUser'";
+        $changePassQuery = "UPDATE `User` SET `password`='$newPass' WHERE idUser='$idUser'";
 
         // run change pass query
         if(mysqli_query($connection, $changePassQuery)){
           echo "Account password changed, Returning to home.php ";
-          header("Refresh:5;Location:http://192.168.64.2/Modul/TugasBesar/View/home.php");
+          header("Location:http://192.168.64.2/Modul/TugasBesar/View/home.php");
         } else{
-          echo "ERROR: Could not able to execute $statusQuery. " . mysqli_error($connection);
+          echo "ERROR: Could not able to execute $changePassQuery. " . mysqli_error($connection);
         }
 
 

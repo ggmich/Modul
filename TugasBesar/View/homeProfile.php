@@ -1,12 +1,20 @@
-<?php
-	include "../View/headerUser.html";
-?>
+
 
   <br>
 
 
 	<table>
-		<?php include "../View/userDeleteAcc.php"; ?>
+		<?php include "../View/userChangeStatus.php"; ?>
+    <br>
+    <?php include "../View/userGantiPassword.php"; ?>
+    <br>
+    <?php include "../View/userDelete.php"; ?>
+    <br>
+
+
+
+
+
 	</table>
 
 
