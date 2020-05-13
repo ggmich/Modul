@@ -23,8 +23,10 @@
 
     	  <label id="label-1">idTransaksi permohonan pencairan yang ingin disetujui</label><br><br>
         <input id="input-1" type="number" name="verifyId" required><br><br>
+				<label id="label-1">status permohonan (1 = terima, -1 = tolak)</label><br><br>
+				<input id="input-1" type="number" name="transactionId" required><br><br>
 
-        <input class="button" type="submit" value="donasi"><br>
+        <input class="button" type="submit" value="Verifikasi"><br>
 
 
     </form>

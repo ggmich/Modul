@@ -11,6 +11,7 @@
 
     //extractnya lewat session ID usernya dari cookie
     $username = $_SESSION['username'];
+
     $queryFindIdFundraiser = "select `idUser` FROM User WHERE userName = '$username';";
     $result = $connection -> query($queryFindIdFundraiser);
 
@@ -44,7 +45,7 @@
  				}
  			}
  			else{
- 				echo "gagal fetching";
+ 				echo "Belum ada project yang disetujui atau diverifikasi";
  			}
 
  			$connection-> close();

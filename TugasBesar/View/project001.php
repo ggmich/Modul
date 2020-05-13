@@ -18,6 +18,110 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="../View/style/projectDonasiStyle.css">
+	<style>
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: AmaticSC-Regular;
+	}
+
+	/* Style the header */
+	header {
+		background-color: rgb(172, 213, 240);
+		background-image: linear-gradient(rgb(116, 180, 223),rgb(172, 213, 240));
+		padding: 45px;
+		text-align: center;
+		font-size: 35px;
+		color: white;
+	}
+
+	/* Create two columns/boxes that floats next to each other */
+	nav {
+		float: left;
+		width: 20%;
+		padding:10px;
+		height: 400px; /* only for demonstration, should be removed */
+		background: #2471A3;
+		font-size: 30px;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	article {
+		float: left;
+		padding: 10px;
+		width: 60%;
+		background-color: rgb(196, 231, 255);
+		height: 400px; /* only for demonstration, should be removed */
+		width : 450px;
+		font-size: 21px;
+	}
+
+	/* Clear floats after the columns */
+	section:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	aside{
+		float: right;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		background-color: rgb(80, 157, 209);
+		height: 400px;
+		width :228.5px;
+		margin-right: 0px;
+		font-size: 23px;
+	}
+
+	/* Style the footer */
+
+	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+	@media (max-width: 600px) {
+		nav, article {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	@font-face{
+		font-family : AmaticSC-Regular;
+		src : url(fonts/AmaticSC-Regular.ttf);
+	}
+
+	#button{
+		background-color: rgb(172, 213, 240);
+		border: none;
+		border-radius: 10px;
+		width : 100px;
+		height : 40px;
+		font-family : AmaticSC-Regular;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	#button1{
+		background-color: rgb(172, 213, 240);
+		border: none;
+		border-radius: 10px;
+		width : 60px;
+		height : 40px;
+		font-family : AmaticSC-Regular;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+
+	</style>
 </head>
 
 <body>
@@ -63,7 +167,7 @@
           </fieldset>
     </fieldset>
     <br>
-    <button id="button" onclick="location.href='../Controller/printLaporan.php';">Print laporan</button>
+
   </aside>
 </section>
 

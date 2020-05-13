@@ -24,7 +24,7 @@
     	  <label id="label-1">idCampaign yang ingin Verifikasi</label><br><br>
         <input id="input-1" type="number" name="verifyId" required><br><br>
 
-        <input class="button" type="submit" value="donasi"><br>
+        <input class="button" type="submit" value="Verifikasi"><br>
 
 
     </form>
