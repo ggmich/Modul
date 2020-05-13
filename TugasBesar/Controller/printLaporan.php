@@ -14,7 +14,7 @@
     </center>
 
     <?php
-    include 'connection.php';
+    include '../Model/connection.php';
     ?>
 
     <table border="1" style="width: 100%">
@@ -26,7 +26,7 @@
         <?php
         $no = 1;
         $idCampaign = $_POST['idCampaign'];
-        $sql = mysqli_query($koneksi, "select namaCampaign,PencairanDana.totalPencairan, from campaign inner join PencairanDana on campaign.idCampaign = pencairanDana.idCampaign,where idCampaign='$idCampaign'");
+        $sql = mysqli_query($connection, "select namaCampaign,PencairanDana.totalPencairan, from campaign inner join PencairanDana on campaign.idCampaign = pencairanDana.idCampaign,where idCampaign='$idCampaign'");
         while ($data = mysqli_fetch_array($sql)) {
         ?>
             <tr>
