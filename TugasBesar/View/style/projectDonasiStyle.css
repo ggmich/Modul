@@ -39,7 +39,7 @@ article {
   width: 60%;
   background-color: rgb(196, 231, 255);
   height: 400px; /* only for demonstration, should be removed */
-  width : 1000px;
+  width : 999px;
   font-size: 21px;
 }
 
