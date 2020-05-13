@@ -45,25 +45,25 @@
 
     	  <label id="label-1">Jumlah Donasi Anda</label><br><br>
           <input id="input-1" type="text" name="jumlahDonasi" required><br><br>
-					<input type="radio" name="statAnonim" value="Anonim">Anonim<br>
-					<input type="radio" name="statAnonim" value="Tidak Anonim">Tidak Anonim<br><br>
-          <input class="button" type="submit" value="donasi"><br>
+					<input type="radio" name="statAnonim" value="Anonim">Anonim
+					<input type="radio" name="statAnonim" value="Tidak Anonim">Tidak Anonim<br><Br>
+          <input id="button1" type="submit" value="donasi"><br>
 
 
     </form>
   </article>
-  <button onclick="location.href='../Controller/printLaporan.php';">Print laporan</button>
   <aside>
   	<fieldset>
-          <legend>Donation Target</legend>
+          <legend>Target Donasi</legend>
 					<h4> <?php echo "Rp ".$row["fundTarget"].",00"; ?> </h4>
 					<fieldset>
 
-						<legend>Current Fund</legend>
+						<legend>Dana Terkumpul</legend>
 							<h4> <?php echo "Rp ".$row["totalDonasi"].",00"; ?> </h4>
-					</fieldset>
-  	</fieldset>
-
+          </fieldset>
+    </fieldset>
+    <br>
+    <button id="button" onclick="location.href='../Controller/printLaporan.php';">Print laporan</button>
   </aside>
 </section>
 
