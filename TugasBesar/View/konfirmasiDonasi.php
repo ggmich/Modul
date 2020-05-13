@@ -44,6 +44,7 @@
     <hr>
     <p>Terima Kasih atas partisipasi anda, mohon transfer Rp <?php echo $currentDonation ?> ke rekening kami di <b>0000-0000-0000-0000</b></p>
     <p>Atas nama <b>togetherWeCan Bank Wombat</b></p>
+    <p><b>Kirimkan bukti transfer anda ke email kami : togetherWeCan@gmail.com </b></p>
     <button onclick="backToMenu()"> Back to Menu</button>
   </article>
 </section>
