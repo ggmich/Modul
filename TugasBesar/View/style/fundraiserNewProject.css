@@ -7,9 +7,9 @@
 body{
   background-image: url("donate.png");
   font-family: AmaticSC-Regular;
-  background-size: cover;
-  align-items: center;
-  display: flex;
+  background-repeat: no-repeat;
+  background-size: 1600px 1200px;
+  height: 1100px;
 }
 
 hr{
@@ -25,7 +25,7 @@ p{
 
 .main{
   width: 500px;
-  height : 610px;
+  height : 1090px;
   background-color: white;
   margin-left: auto;
   margin-right : auto;
@@ -65,12 +65,7 @@ input:focus{
   outline: none;
 }
 
-.label-active{
-  top:8px !important;
-  font-size: 8px !important;
-  line-height: 10px !important;
-  color: #2471A3;
-}
+
 
 input:active{
   outline: none;
@@ -89,17 +84,6 @@ input:active{
 
 .input-group input:focus{
   border-bottom: solid 4px blue;
-}
-
-.input-group label{
-  position: absolute;
-  top: 50%;
-  left: 8px;
-  transform: translateY(-50%);
-  font-size: 12px;
-  line-height: 15px;
-  pointer-events: none;
-  transition: 180ms ease;
 }
 
 .button{
