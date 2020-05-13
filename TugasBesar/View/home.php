@@ -2,7 +2,7 @@
 	include "../View/headerUser.html";
 ?>
 
-	<hr>
+
   <br>
 
 
