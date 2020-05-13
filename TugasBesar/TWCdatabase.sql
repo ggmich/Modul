@@ -65,7 +65,8 @@ CREATE TABLE IF NOT EXISTS User (
   email varchar(30) NOT NULL,
   password varchar(20) NOT NULL,
   noHp varchar(20) NOT NULL,
-  statusAdmin int(1) NOT NULL
+  statusAdmin int(1) NOT NULL,
+  statusAkun int (1) NOT NULL,
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
 
 
