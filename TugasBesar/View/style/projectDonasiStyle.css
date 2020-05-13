@@ -11,7 +11,7 @@ body {
 header {
   background-color: rgb(172, 213, 240);
   background-image: linear-gradient(rgb(116, 180, 223),rgb(172, 213, 240));
-  padding: 50px;
+  padding: 45px;
   text-align: center;
   font-size: 35px;
   color: white;
@@ -51,7 +51,7 @@ section:after {
 }
 
 aside{
-  float:left;
+  float: right;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
