@@ -20,7 +20,7 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   $lastIdRow = $extractId -> fetch_assoc();
   $lastId = $lastIdRow['max'];
   if($lastId == null){
-    $lastId = 1
+    $lastId = 1;
   }
   else{
     $lastId = $lastId + 1;
