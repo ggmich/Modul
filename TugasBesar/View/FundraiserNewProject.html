@@ -1,78 +1,141 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
+  <head>
+    
+    <meta charset="utf-8">
 
-  <title>Fundraiser - new project</title>
+    <title>Fundraiser - new campaign</title>
 
-  <link rel="stylesheet" href="../View/style/fundraiserNewProject.css">
-  <link rel="stylesheet" href="../View/style/defaultButton.css">
+    <link rel="stylesheet" href="..view/style/fundraiserNewProject.css">
 
+  </head>
 
+  <body>
 
-</head>
-
-<body style="background-image : url('style/fund.png')">
-
-  <form method="post" action="../Controller/userController/fundraiserUser/fundraiserAddNewProject.php">
     <div class="main">
 
-      <div class="input">
+      <p>TogetherWeCan !</p>
 
-        <fieldset>
-          <legend>Campaign Information</legend>
-          <table id="campaignDetails"></table>
-          <tr>
-            <td><label>Nama campaign : </label></td>
-            <td><input type="text" id="nama" name="nama"></td>
-          </tr>
+      <hr>
+
+      <h1 style="margin-left: 10px;">Campaign Information</h1>
+
+      <br>
+
+      <div class="divLogin">
+
+        <form method="post" action="../Controller/userController/fundraiserUser/fundraiserAddNewProject.php">
+
+          <div class="input-group">
+
+            <label id="label-1" style="font-size: 20px;">Nama Campaign</label>
+            <input type="text" id="nama" name="nama">
+
+          </div>
+
           <br>
-          <tr>
-            <td><label>Tanggal mulai campaign : </label></td>
-            <td><input type="date" id="tanggal" value="dd/mm/yyyy" name ="date"></td>
-          </tr>
+
+          <div class="input-group">
+
+            <label id="label-2" style="font-size: 20px;">Tanggal Mulai Campaign</label>
+            <input type="date" id="tanggal" value="dd/mm/yyyy" name ="date">
+
+          </div>
+
           <br>
-          <tr>
-            <td><label>Jenis campaign : </label></td>
-            <td><select id="tipe" name="type"><br>
-                <option value="bencana alam">bencana alam</option>
-                <option value="orang sakit">orang sakit</option>
-                <option value="lainnya">lainnya</option>
-              </select></td>
-          </tr>
+
+          <div class="input-group">
+
+            <label id="label-3" style="font-size: 20px;">Jenis Campaign</label>
+            <select id="tipe" name="type"><br>
+            <option value="bencana alam">bencana alam</option>
+            <option value="orang sakit">orang sakit</option>
+            <option value="lainnya">lainnya</option>
+            </select>
+
+          </div>
+
           <br>
-            <td><label>fundTarget : </label></td>
-            <td><input type="number" id="fundTarget" name="fundTarget"></td>
-            <br>
-            <td><label>Alamat : </label></td>
-            <td><input type="text" id="address" name="address"></td>
-            <br>
-            <td><label>KTP : </label></td>
-            <td><input type="text" id="ktp" name="ktp"></td>
-            <br>
-            <td><label>Telepon : </label></td>
-            <td><input type="number" id="phone" name="phone"></td>
-            <br>
-            <td><label>Keterangan : </label></td>
-            <td><input type="text" id="keterangan" name="story"></td>
-            <br>
-            <td><label>No Rekening : </label></td>
-            <td><input type="number" id="noRekening" name="noRekening"></td>
-          </tr>
+
+          <div class="input-group">
+
+            <label id="label-4" style="font-size: 20px;">Target</label>
+            <input type="number" id="fundTarget" name="fundTarget">
+
+          </div>
+
           <br>
-            <label for="gambarCampaign">Tambahkan Link URL gambar untuk lebih meyakinkan para donatur</label>
+
+          <div class="input-group">
+
+          <label id="label-5" style="font-size: 20px;">Alamat</label>
+          <input type="text" id="address" name="address">
+
+          </div>
+
           <br>
+
+          <div class="input-group">
+
+            <label id="label-6" style="font-size: 20px;">KTP</label>
+            <input type="text" id="ktp" name="ktp">
+
+          </div>
+
+          <br>
+
+          <div class="input-group">
+
+            <label id="label-7" style="font-size: 20px;">Telepon</label>
+            <input type="number" id="phone" name="phone">
+
+          </div>
+
+          <br>
+
+          <div class="input-group">
+
+            <label id="label-8" style="font-size: 20px;">Keterangan</label>
+            <input type="text" id="keterangan" name="story">
+
+          </div>
+
+          <br>
+
+          <div class="input-group">
+
+            <label id="label-9" style="font-size: 20px;">No Rekening</label>
+            <input type="number" id="noRekening" name="noRekening">
+
+          </div>
+
+          <br>
+
+          <div class="input-group">
+
+            <label id="label-10" style="font-size: 20px;">Tambahkan Link URL gambar untuk lebih meyakinkan para donatur</label>
             <input type="url" id="gambarCampaign" name="image">
+
+          </div>
+
           <br>
-            <input class="button" type="submit" value="save">
 
-        </fieldset>
+          <div>
 
+            <input class="button" type="submit" value="Register">
+
+          </div>
+
+        </form>
+    
       </div>
 
     </div>
-  </form>
-</body>
+
+    <script src="../View/style/Script/login.js"></script>
+
+  </body>
 
 </html>
