@@ -27,7 +27,7 @@ if(isset($_POST['username']) and isset($_POST['email']) and isset($_POST['passwo
   }
 
   // credential registration in database
-  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`,`statusAdmin`) VALUES ('$username', '$namaLengkap', '$email', '$password', '$noHp','0')";
+  $registerQuery = "INSERT INTO `User` (`userName`, `namaLengkap`, `email`, `password`, `noHp`,`statusAdmin`,`statusAkun`) VALUES ('$username', '$namaLengkap', '$email', '$password', '$noHp','0','1')";
 
   // check credential in database
   $checkQuery = "select * from User where username='$username'";

@@ -8,7 +8,12 @@
  ?>
 
 <?php
+      // registering statusAkun session first
+      $username = $_SESSION['username'];
+      $statusAkun = "SELECT `statusAkun` FROM `User` WHERE User.userName='$username'";
+      $_SESSION['statusAkun'] = $statusAkun;
 
+      // project fetch feeds
 			$imageSelectQuery = " SELECT image, campaignLink, namaCampaign from campaign WHERE status='1'";
 			$result = $connection-> query($imageSelectQuery);
 
