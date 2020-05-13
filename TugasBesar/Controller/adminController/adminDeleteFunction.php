@@ -41,7 +41,7 @@ if (!$select_db){
     // run $deleteQuery
     if(mysqli_query($connection, $deleteQuery)){
       echo "<script type='text/javascript'>alert('Query Executed')</script>";
-      header("Refresh:5;Location:http://192.168.64.2/Modul/TugasBesar/View/adminMenu.php");
+      header("Location:http://192.168.64.2/Modul/TugasBesar/View/adminMenu.php");
     } else{
       echo "ERROR: Could not able to execute $deleteQuery. " . mysqli_error($connection);
     }

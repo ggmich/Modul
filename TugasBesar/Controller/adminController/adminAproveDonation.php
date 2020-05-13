@@ -42,7 +42,7 @@ if (!$select_db){
     // run $query
     if(mysqli_query($connection, $query)){
       echo "Query Executed";
-      header("refresh:5;url:http://192.168.64.2/Modul/TugasBesar/View/adminMenu.php");
+      header("url:http://192.168.64.2/Modul/TugasBesar/View/adminMenu.php");
     } else{
       echo "ERROR: Could not able to execute $query. " . mysqli_error($connection);
     }
