@@ -29,7 +29,7 @@ if (!$select_db){
 
 
 <?php
-    if(isset($_POST['story'], $_POST['image'])){
+    if(isset($_POST['story']) and isset($_POST['image'])){
 
       //extract value from form
       $story = $_POST['story'];

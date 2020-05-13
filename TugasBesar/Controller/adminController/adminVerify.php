@@ -37,12 +37,12 @@ if (!$select_db){
     $verifyId = $_POST['verifyId'];
 
     // query for delete record in campaign table
-    $query = "UPDATE `campaign` SET verifikasi='TRUE' WHERE idCampaign = '$verifyId'";
+    $query = "UPDATE `campaign` SET status='1' WHERE idCampaign = '$verifyId'";
 
     // run $query
     if(mysqli_query($connection, $query)){
       echo "<script type='text/javascript'>alert('Query Executed')</script>";
-      header("Location: ../View/adminDelete.html");
+      header("Location: http://192.168.64.2/Modul/TugasBesar/View/adminMenu.php");
     } else{
       echo "ERROR: Could not able to execute $query. " . mysqli_error($connection);
     }

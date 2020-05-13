@@ -36,7 +36,7 @@
           <br>
             <label for="gambarCampaign">Tambahkan Link URL gambar untuk lebih meyakinkan para donatur</label>
           <br>
-            <input type="url" id="gambarCampaign" name="image">
+            <input type="text" id="gambarCampaign" name="image">
           <br>
             <input class="button" type="submit" value="save">
 
@@ -46,6 +46,7 @@
 
     </div>
   </form>
+	<button id="button" onclick="location.href='../Controller/printLaporan.php';">Print laporan</button>
   <button onclick="toRequestMoney()">Request Money </button>
   <button onclick="backToMenu()">Back to menu</button>
 

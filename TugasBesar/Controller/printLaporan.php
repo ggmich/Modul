@@ -25,18 +25,31 @@
         </tr>
         <?php
         $no = 1;
-        $idCampaign = $_POST['idCampaign'];
-        $sql = mysqli_query($connection, "select namaCampaign,PencairanDana.totalPencairan, from campaign inner join PencairanDana on campaign.idCampaign = pencairanDana.idCampaign,where idCampaign='$idCampaign'");
-        while ($data = mysqli_fetch_array($sql)) {
+
+        $idCampaign = $_SESSION['idCampaign'];
+
+
+        $sql = "select campaign.namaCampaign,PencairanDana.totalPencairan
+from campaign
+inner join PencairanDana
+on campaign.idCampaign = PencairanDana.idCampaign
+where campaign.idCampaign='$idCampaign'";
+        $result = $connection -> query($sql);
+
+        if ($result -> num_rows > 0) {
+          while($row = $result -> fetch_assoc()){
         ?>
             <tr>
                 <td><?php echo $no++; ?></td>
-                <td><?php echo $data['nama']; ?></td>
-                <td><?php echo $data['jumlahPencairanDana']; ?></td>
+                <td><?php echo $row['namaCampaign']; ?></td>
+                <td><?php echo $row['totalPencairan']; ?></td>
             </tr>
+
         <?php
+              }
         }
         ?>
+
     </table>
 
     <script>
