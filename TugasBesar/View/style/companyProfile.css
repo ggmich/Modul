@@ -6,17 +6,17 @@ body{
     background-size: cover;
     align-items: center;
     display: flex;
-    opacity: 85%;
+    background-color: rgba(255, 255, 255, 0.808);
 }
-.judul{
+#judul{
     font-weight:bold ;
-    font-size: 50px;
+    font-size: 30px;
     font-family : AmaticSC-Regular;
     text-shadow: 3px 3px gray;
     color: lightskyblue;
     margin-top: 0%;
    text-align: center;
-   margin-left: 200px;
+   margin-left: 400px;
    border-bottom: 3px thin grey;
    margin-top: -45px;
 }
@@ -26,12 +26,15 @@ body{
 .isi{
     background-color: white;
     width: 1000px;
-    height: 700px;
+    height: 1300px;
     padding: 20px;
     margin-left: 160px ;
     font-family :PlayFair-Regular;
     text-align: justify;
     font-size: 16px;
+}
+.text{
+    text-align: justify;
 }
 pre {
     
@@ -52,55 +55,59 @@ pre {
 
    
   footer p{
-    background-color: grey;
-    padding: 10px 20px;
+    background-color: #2471A3;
+    padding: 11px 20px;
     color:white;
-    font-size: 20px;
-    margin-left : -1200px;
+    font-size: 18px;
+    margin-left : -1400px;
     margin-bottom: 0px;
     text-align: center;  
     vertical-align: bottom; 
     display: block;
-    position: fixed;
+   margin-top: 1300px;
     bottom:0px;
-    width: 100%;
+    width: 1400px;
+    font-family : AmaticSC-Regular;
+    position: relative;
     }
 
-    a.active:hover{
-        background-color:white;
-        color: black;
-        }
-        .fa:hover{
-        background-color:white;
-        color: black;
-        }
-        a.active{
-            display: inline-block;
-            margin-right:15px;
-            margin-top:0px;
-            margin-bottom: 20px;
-            margin-left: -10px;
-            color:white;
-            padding-top: 15px;
-            padding-bottom: 20px;
-            padding-left: 15px;
-            padding-right: 15px;
-            
-        }
-
+   
     
-	a.active:link {
-		text-decoration: none;
-}
-	a.active:visited {
-	text-decoration: none;
-}
-	a.active:hover {
-	text-decoration: none;
-}
-	a.active:active {
-  	text-decoration: none;
-}
+
+    #menu{
+        font-family : AmaticSC-Regular;
+        border-style: soli gray;
+        height : 50px ;
+        background-color: #2471A3;
+        margin : 0px;
+        font-size: 22px;
+        width: 1400px;
+       }
+       a.listlink {
+        display: inline-block;
+        text-align: center;
+        color : white ;
+        height : 35px;
+        padding-top : 15px;
+        padding-left : 15px;
+        padding-right : 15px;
+        padding-bottom: 35px;
+        
+       }
+       a.listlink:hover {
+        background-color:rgb(172, 213, 240);
+        color :white ;
+        text-decoration: none;
+       }
+       a.listlink:visited{
+        text-decoration: none;
+       }
+       a.listlink:link{
+        text-decoration: none;
+       }
+       a.listlink:active{
+        text-decoration: none;
+       }
 
 @font-face{
     font-family : AmaticSC-Regular;
