@@ -65,6 +65,43 @@ pre {
     bottom:0px;
     width: 100%;
     }
+
+    a.active:hover{
+        background-color:white;
+        color: black;
+        }
+        .fa:hover{
+        background-color:white;
+        color: black;
+        }
+        a.active{
+            display: inline-block;
+            margin-right:15px;
+            margin-top:0px;
+            margin-bottom: 20px;
+            margin-left: -10px;
+            color:white;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            
+        }
+
+    
+	a.active:link {
+		text-decoration: none;
+}
+	a.active:visited {
+	text-decoration: none;
+}
+	a.active:hover {
+	text-decoration: none;
+}
+	a.active:active {
+  	text-decoration: none;
+}
+
 @font-face{
     font-family : AmaticSC-Regular;
     src : url(fonts/AmaticSC-Regular.ttf);
