@@ -1,4 +1,4 @@
-<?php include_once "../View/headerAdmin.html"; ?>
+<?php include "../View/headerAdmin.html"; ?>
 
 <head>
     <meta charset="utf-8">
