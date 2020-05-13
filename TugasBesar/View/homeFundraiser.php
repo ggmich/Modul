@@ -1,5 +1,6 @@
 <?php
 	include "../View/headerUser.html";
+
 ?>
 
   <br>
@@ -11,7 +12,7 @@
 
 
 <?php
-
+	
 	include "../View/footer.html";
 
 ?>

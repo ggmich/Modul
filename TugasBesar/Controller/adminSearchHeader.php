@@ -5,7 +5,7 @@
 
 
     */
-    include "../Model/mysqlDB.php";
+    require "../Model/mysqlDB.php";
 
     $query = "SELECT * FROM campaign";
 
@@ -13,9 +13,9 @@
     $campaignName = "";
 
     // search mechanism
-    if(isset($_GET['search'])){
-      $campaignName = $_GET['search'];
-      if(isset($campaignName) && $campaignName != ""){
+    if(isset($_POST['search'])){
+      $campaignName = $_POST['search'];
+      if(isset($campaignName)){
         $campaignName = $db->escapeString($campaignName);
         $query .= " WHERE `nameCampaign` LIKE '$%$campaignName%'";
       }
