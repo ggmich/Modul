@@ -14,13 +14,13 @@ include "../View/headerUser.html";
 <div class="divIn">
     <form method="post" action="../Controller/userChangeStatus.php">
 
-      
-    <label id="label-1" style="font-size: 20px;">Apakah anda yakin ingin mendeactivate Account?</label>
-            <select id="tipe" name="type"><br>
-            <option value="0">Ya</option>
-            <option value="1">Tidak</option>
 
-        <input class="button" type="submit" value="donasi"><br>
+        <label id="label-1" style="font-size: 20px;">Apakah anda yakin ingin mendeactivate Account?</label>
+        <select id="tipe" name="type"><br>
+            <option value="0">Ya</option>
+            <option value="1">Tidak</option><br>
+
+            <input class="button" type="submit" value="Submit" href="profile.php"><br>
 
 
     </form>
